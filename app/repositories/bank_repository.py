@@ -15,7 +15,7 @@ def get_bank_id(bank_name: str) -> Optional[int]:
     try:
         conn = get_connection()
         cursor = conn.cursor()
-        cursor.execute(query, (bank_name.strip(),))
+        cursor.execute(query, (bank_name,))
         result = cursor.fetchone()
         return result[0] if result else None
     except Exception as e:
@@ -105,7 +105,7 @@ def insert_bank(bank_name: str) -> Optional[int]:
     try:
         conn = get_connection()
         cursor = conn.cursor()
-        cursor.execute(query, (bank_name.strip(),))
+        cursor.execute(query, (bank_name,))
         bank_id = cursor.fetchone()[0]
         conn.commit()
         return bank_id

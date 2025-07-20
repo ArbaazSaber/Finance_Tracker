@@ -15,7 +15,7 @@ def get_category_id(category_name: str) -> Optional[int]:
     try:
         conn = get_connection()
         cursor = conn.cursor()
-        cursor.execute(query, (category_name.strip(),))
+        cursor.execute(query, (category_name,))
         result = cursor.fetchone()
         return result[0] if result else None
     except Exception as e:
@@ -105,7 +105,7 @@ def insert_category(category_name: str) -> Optional[int]:
     try:
         conn = get_connection()
         cursor = conn.cursor()
-        cursor.execute(query, (category_name.strip(),))
+        cursor.execute(query, (category_name,))
         category_id = cursor.fetchone()[0]
         conn.commit()
         return category_id
