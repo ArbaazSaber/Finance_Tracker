@@ -150,22 +150,6 @@ def insert_tag(tag_name: str, category_name: str):
         cursor.close()
         conn.close()
 
-def does_tag_exist(tag_name: str) -> bool:
-    try:
-        conn = get_connection()
-        cursor = conn.cursor()
-
-        cursor.execute("SELECT 1 FROM tags WHERE tag_name = %s", (tag_name,))
-        result = cursor.fetchone()
-        if not result:
-            return False
-        return True
-    except Exception as e:
-        logger.exception(f"Error: {e}")
-    finally:
-        cursor.close()
-        conn.close()
-
 def count_tags() -> int:
     try:
         conn = get_connection()
@@ -213,14 +197,3 @@ def get_category_of_tag(tag_name: str):
     finally:
         cursor.close()
         conn.close()
-
-if __name__ == "__main__":
-    logger.info(get_tag_id("Groceries"))
-    logger.info(get_tag_name(1))
-    logger.info(get_all_tags())
-    logger.info(get_all_tag_ids())
-    logger.info(get_all_tag_names())
-    logger.info(get_latest_tag_entry())
-    logger.info(does_tag_exist("Groceries"))
-    logger.info(does_tag_exist("Grocery"))
-    logger.info(count_tags())

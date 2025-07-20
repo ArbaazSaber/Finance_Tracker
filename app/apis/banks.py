@@ -18,7 +18,7 @@ def get_all_bank_names():
 
 @router.get("/count", summary="Get total number of banks")
 def get_bank_count():
-    return {"count": bank_service.get_total_bank_count()}
+    return {"count": bank_service.fetch_total_bank_count()}
 
 
 @router.get("/latest", summary="Get the latest inserted bank name")
@@ -57,8 +57,3 @@ def insert_new_bank(data: BankCreate):
         return {"bank_id": bank_id}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Insertion failed: {str(e)}")
-
-
-@router.get("/exists/{bank_name}", summary="Check if a bank exists")
-def does_bank_exist(bank_name: str):
-    return {"exists": bank_service.does_bank_exist(bank_name)}

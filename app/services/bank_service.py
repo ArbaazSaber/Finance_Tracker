@@ -125,28 +125,3 @@ def fetch_banks_without_rules() -> List[str]:
     banks = bank_repo.get_banks_without_rules()
     logger.info(f"Banks without rules: {banks}")
     return banks
-
-def does_bank_exist(bank_name: str) -> bool:
-    """
-    Check if a bank exists in the database.
-
-    Args:
-        bank_name (str): Name of the bank to check.
-
-    Returns:
-        bool: True if the bank exists, False otherwise.
-
-    Raises:
-        ValueError: If bank_name is empty or only whitespace.
-    """
-    bank_name = bank_name.strip()
-
-    if not bank_name:
-        raise ValueError("Bank name cannot be empty or whitespace.")
-
-    try:
-        bank = bank_repo.get_bank_id(bank_name)
-        return bank is not None
-    except Exception as e:
-        logger.exception(f"Error checking if bank exists: {e}")
-        raise
