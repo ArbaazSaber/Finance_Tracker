@@ -1,6 +1,8 @@
 from typing import List, Optional
 
 from utils.logger import logger
+from models.bank import BankCreate
+
 import repositories.bank_repository as bank_repo
 
 def fetch_all_banks() -> List[tuple]:
@@ -65,7 +67,7 @@ def fetch_bank_name_by_id(bank_id: int) -> Optional[str]:
     return bank
 
 
-def add_new_bank(bank_name: str) -> int:
+def add_new_bank(bank: BankCreate) -> int:
     """
     Insert a new bank after ensuring it does not already exist.
 
@@ -78,7 +80,7 @@ def add_new_bank(bank_name: str) -> int:
     Raises:
         ValueError: If the bank name is empty or already exists.
     """
-    bank_name = bank_name.strip()
+    bank_name = bank.bank_name.strip()
     if not bank_name:
         raise ValueError("Bank name must not be empty")
 

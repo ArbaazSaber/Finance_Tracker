@@ -48,7 +48,7 @@ def get_category_id(category_name: str):
 @router.post("/", summary="Insert a new category")
 def insert_new_category(data: CategoryCreate):
     try:
-        category_id = category_service.add_new_category(data.category_name)
+        category_id = category_service.add_new_category(data)
         return {"category_id": category_id}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Insertion failed: {str(e)}")

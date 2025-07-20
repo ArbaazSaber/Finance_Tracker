@@ -1,6 +1,8 @@
 from typing import List, Optional
 
 from utils.logger import logger
+from models.category import CategoryCreate
+
 import repositories.category_repository as category_repo
 
 def fetch_all_categories() -> List[tuple]:
@@ -10,9 +12,9 @@ def fetch_all_categories() -> List[tuple]:
     Returns:
         List[tuple]: A list of tuples, each containing category_id and category_name.
     """
-    Categories = category_repo.get_all_categories()
-    logger.info(f"Fetched {len(Categories)} Categories")
-    return Categories
+    categories = category_repo.get_all_categories()
+    logger.info(f"Fetched {len(categories)} Categories")
+    return categories
 
 
 def fetch_all_category_names() -> List[str]:
@@ -65,7 +67,7 @@ def fetch_category_name_by_id(category_id: int) -> Optional[str]:
     return category
 
 
-def add_new_category(category_name: str) -> int:
+def add_new_category(category: CategoryCreate) -> int:
     """
     Insert a new category after ensuring it does not already exist.
 
@@ -78,7 +80,7 @@ def add_new_category(category_name: str) -> int:
     Raises:
         ValueError: If the category name is empty or already exists.
     """
-    category_name = category_name.strip()
+    category_name = category.category_name.strip()
     if not category_name:
         raise ValueError("Category name must not be empty")
 

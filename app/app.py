@@ -5,6 +5,7 @@ app = FastAPI(title="Finance Tracker Automation")
 
 app.include_router(banks.router)
 app.include_router(categories.router)
+app.include_router(tags.router)
 
 @app.get("/")
 async def root():

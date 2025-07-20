@@ -53,7 +53,7 @@ def get_bank_id(bank_name: str):
 @router.post("/", summary="Insert a new bank")
 def insert_new_bank(data: BankCreate):
     try:
-        bank_id = bank_service.add_new_bank(data.bank_name)
+        bank_id = bank_service.add_new_bank(data)
         return {"bank_id": bank_id}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Insertion failed: {str(e)}")
