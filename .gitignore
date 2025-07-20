@@ -1,3 +1,5 @@
 logs
 finance-tracker-env
-app\__pycache__
+__pycache__/
+*.py[cod]
+.env

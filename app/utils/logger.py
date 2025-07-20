@@ -18,11 +18,11 @@ def get_logger(name: str = "app", log_dir:str ="logs", level: str=logging.INFO )
         file_formatter = logging.Formatter('%(asctime)s | %(levelname)s | %(name)s | %(message)s')
         file_handler.setFormatter(file_formatter)
 
-        # console_handler = logging.StreamHandler()
-        # console_formatter = logging.Formatter('%(levelname)s | %(message)s')
-        # console_handler.setFormatter(console_formatter)
+        console_handler = logging.StreamHandler()
+        console_formatter = logging.Formatter('%(levelname)s | %(message)s')
+        console_handler.setFormatter(console_formatter)
 
-        # logger.addHandler(console_handler)
+        logger.addHandler(console_handler)
         logger.addHandler(file_handler)
     return logger
 

@@ -1,5 +1,6 @@
 import db.database as db_conn
 import utils.util_functions as utils
+from utils.logger import logger
 
 def get_category_id(category_name: str) -> int:
     category_name = utils.format_string(category_name)
@@ -15,10 +16,10 @@ def get_category_id(category_name: str) -> int:
             raise ValueError(f"Category {category_name} does not exist")
         category_id = result[0]
 
-        print(f"Category - {category_name} with ID - {category_id}")
+        logger.info("Category - {category_name} with ID - {category_id}")
         return category_id
     except Exception as e:
-        print(f"Error: {e}")
+        logger.exception(f"Error: {e}")
         conn.rollback()
     finally:
         cursor.close()
@@ -36,11 +37,11 @@ def get_category_name(category_id: int) -> str:
             raise ValueError(f"Category {category_id} does not exist")
         category_name = result[0]
 
-        print(f"Category - {category_name} with ID - {category_id}")
+        logger.info("Category - {category_name} with ID - {category_id}")
 
         return category_name
     except Exception as e:
-        print(f"Error: {e}")
+        logger.exception(f"Error: {e}")
         conn.rollback()
     finally:
         cursor.close()
@@ -60,11 +61,11 @@ def get_all_categories() -> list:
 
         categories = [(category[0], category[1]) for category in result]
 
-        print(f"Categories - {categories}")
+        logger.info("Categories - {categories}")
         
         return categories
     except Exception as e:
-        print(f"Error: {e}")
+        logger.exception(f"Error: {e}")
         conn.rollback()
     finally:
         cursor.close()
@@ -83,11 +84,11 @@ def get_all_category_names() -> list:
 
         category_names = [category[0] for category in result]
 
-        print(f"Categories - {category_names}")
+        logger.info("Categories - {category_names}")
         
         return category_names
     except Exception as e:
-        print(f"Error: {e}")
+        logger.exception(f"Error: {e}")
         conn.rollback()
     finally:
         cursor.close()
@@ -106,11 +107,11 @@ def get_all_category_ids() -> list:
 
         category_ids = [category[0] for category in result]
 
-        print(f"Category IDs - {category_ids}")
+        logger.info("Category IDs - {category_ids}")
         
         return category_ids
     except Exception as e:
-        print(f"Error: {e}")
+        logger.exception(f"Error: {e}")
         conn.rollback()
     finally:
         cursor.close()
@@ -127,9 +128,9 @@ def insert_category(category_name: str):
         category_id = cursor.fetchone()[0]
         conn.commit()
 
-        print(f"Inserted Category: {category_name} with ID: {category_id}")
+        logger.info("Inserted Category: {category_name} with ID: {category_id}")
     except Exception as e:
-        print(f"Error: {e}")
+        logger.exception(f"Error: {e}")
         conn.rollback()
     finally:
         cursor.close()
@@ -147,8 +148,7 @@ def does_category_exist(category_name: str) -> bool:
             return False
         return True
     except Exception as e:
-        print("Error: ",e)
-        conn.rollback()
+        logger.exception(f"Error: {e}")
     finally:
         cursor.close()
         conn.close()
@@ -164,8 +164,7 @@ def count_categories() -> int:
             return 0
         return result[0]
     except Exception as e:
-        print("Error: ",e)
-        conn.rollback()
+        logger.exception(f"Error: {e}")
     finally:
         cursor.close()
         conn.close()
@@ -181,16 +180,16 @@ def get_latest_category_entry() -> str:
             return None
         return result[0]
     except Exception as e:
-        print("Error: ",e)
-        conn.rollback()
+        logger.exception(f"Error: {e}")
     finally:
         cursor.close()
         conn.close()
-
-print(get_all_categories())
-print(get_all_category_ids())
-print(get_all_category_names())
-print(get_latest_category_entry())
-print(does_category_exist("Needs"))
-print(does_category_exist("Need"))
-print(count_categories())
+        
+if __name__ == "__main__":
+    logger.info(get_all_categories())
+    logger.info(get_all_category_ids())
+    logger.info(get_all_category_names())
+    logger.info(get_latest_category_entry())
+    logger.info(does_category_exist("Needs"))
+    logger.info(does_category_exist("Need"))
+    logger.info(count_categories())
