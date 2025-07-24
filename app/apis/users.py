@@ -3,7 +3,7 @@ from fastapi import APIRouter, HTTPException
 import services.user_service as user_service
 from models.user import UserAuth, UserCreate
 
-router = APIRouter(prefix="/users", users=["Users"])
+router = APIRouter(prefix="/users", tags=["Users"])
 
 @router.get("/id/{user_id}", summary="Get user by ID")
 def get_user_by_id(user_id: int):
@@ -33,7 +33,7 @@ def create_user(user_data: UserCreate):
         raise HTTPException(status_code=400, detail="User creation failed")
     return {"user_id": user_id}
 
-@router.post("/authenticate", summary="Authenticate user")
+@router.get("/authenticate", summary="Authenticate user")
 def authenticate_user(user_auth: UserAuth):
     user = user_service.authenticate_user(user_auth)
     if user is None:

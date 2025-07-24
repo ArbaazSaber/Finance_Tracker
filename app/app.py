@@ -1,11 +1,13 @@
 from fastapi import FastAPI
-from apis import banks, categories, tags
+from apis import banks, categories, tags, users, tag_rules
 
 app = FastAPI(title="Finance Tracker Automation")
 
 app.include_router(banks.router)
 app.include_router(categories.router)
 app.include_router(tags.router)
+app.include_router(users.router)
+app.include_router(tag_rules.router)
 
 @app.get("/")
 async def root():
