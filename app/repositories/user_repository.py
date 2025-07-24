@@ -1,8 +1,8 @@
 from db.database import get_connection
 from utils.logger import logger
-from models.user import UserCreate
+from psycopg2.extras import RealDictCursor
 
-from typing import Optional, List, Dict
+from typing import Optional, Dict
 
 def get_user_by_id(user_id: int) -> Optional[Dict]:
     """
@@ -14,11 +14,11 @@ def get_user_by_id(user_id: int) -> Optional[Dict]:
     cursor = None
 
     try:
-        conn = get_connection()
+        conn = get_connection(RealDictCursor)
         cursor = conn.cursor()
         cursor.execute(query, (user_id,))
         result = cursor.fetchone()
-        return result[0] if result else None
+        return result if result else None
     except Exception as e:
         logger.error(f"[Repository] Error in get_user_by_id: {e}")
     finally:
@@ -37,11 +37,11 @@ def get_user_by_username(username: str) -> Optional[Dict]:
     cursor = None
 
     try:
-        conn = get_connection()
+        conn = get_connection(RealDictCursor)
         cursor = conn.cursor()
         cursor.execute(query, (username,))
         result = cursor.fetchone()
-        return result[0] if result else None
+        return result if result else None
     except Exception as e:
         logger.error(f"[Repository] Error in get_user_by_username: {e}")
     finally:
@@ -60,11 +60,11 @@ def get_user_by_email(email: str) -> Optional[Dict]:
     cursor = None
 
     try:
-        conn = get_connection()
+        conn = get_connection(RealDictCursor)
         cursor = conn.cursor()
         cursor.execute(query, (email,))
         result = cursor.fetchone()
-        return result[0] if result else None
+        return result if result else None
     except Exception as e:
         logger.error(f"[Repository] Error in get_user_by_email: {e}")
     finally:

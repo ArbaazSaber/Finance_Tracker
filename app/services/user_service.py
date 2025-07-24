@@ -182,12 +182,12 @@ def authenticate_user(user_auth: UserAuth) -> Optional[int]:
         logger.info(f"Authentication failed: User '{user_auth.username_or_email}' not found.")
         return None
 
-    if not user.get("is_active", True):
+    if not user["is_active"]:
         logger.info(f"Authentication failed: User '{user_auth.username_or_email}' is inactive.")
         return None
 
-    if not verify_password(user_auth.password, user["hashed_password"]):
+    if not verify_password(user["password_hash"], user_auth.password):
         logger.info(f"Authentication failed: Incorrect password for user '{user_auth.username_or_email}'.")
         return None
     
-    return user.get("user_id", None)
+    return user.get("user_id", None) 
