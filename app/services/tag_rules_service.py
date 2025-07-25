@@ -1,8 +1,11 @@
 from typing import List, Optional, Dict
+
 from models.tag_rule import TagRuleBase
-import repositories.tag_rules_repository as tag_rules_repo
 from utils.logger import logger
+from utils.util_functions import format_string
 from services.tag_service import fetch_tag_id_by_name
+
+import repositories.tag_rules_repository as tag_rules_repo
 
 def fetch_all_tagging_rules() -> List[Dict]:
     """
@@ -51,7 +54,7 @@ def fetch_rule_by_id(rule_id: int) -> Optional[Dict]:
         logger.warning(f"No tagging rule found with ID {rule_id}")
     return rule
 
-def create_tagging_rule(keyword: str, tag_name: str) -> Optional[int]:
+def create_tagging_rule(tag_rule: TagRuleBase) -> Optional[int]:
     """
     Create a new tagging rule with a keyword and tag.
 
@@ -62,14 +65,14 @@ def create_tagging_rule(keyword: str, tag_name: str) -> Optional[int]:
     Returns:
         Optional[int]: The ID of the newly created rule, or None if failed.
     """
-    keyword = keyword.strip().lower()
+    keyword = tag_rule.keyword.strip().lower()
     if not keyword:
         logger.warning("Keyword must not be empty")
         return None
 
-    tag_id = fetch_tag_id_by_name(tag_name)
+    tag_id = fetch_tag_id_by_name(format_string(tag_rule.tag_name))
     if not tag_id:
-        logger.warning(f"Tag {tag_name} does not exist")
+        logger.warning(f"Tag {tag_rule.tag_name} does not exist")
         return None
 
     rule_id = tag_rules_repo.insert_tagging_rule(keyword, tag_id)
@@ -79,7 +82,7 @@ def create_tagging_rule(keyword: str, tag_name: str) -> Optional[int]:
         logger.error("Failed to create tagging rule")
     return rule_id
 
-def update_tagging_rule(rule_id: int, keyword: Optional[str] = None, tag_name: Optional[str] = None) -> bool:
+def update_tagging_rule(rule_id: int, tag_rule: TagRuleBase) -> bool:
     """
     Update an existing tagging rule.
 
@@ -97,9 +100,9 @@ def update_tagging_rule(rule_id: int, keyword: Optional[str] = None, tag_name: O
         return False
 
     # Default to existing values if not provided
-    tag_id = fetch_tag_id_by_name(tag_name)
+    tag_id = fetch_tag_id_by_name(format_string(tag_rule.tag_name))
 
-    new_keyword = keyword.strip().lower() if keyword else existing['keyword']
+    new_keyword = tag_rule.keyword.strip().lower() if tag_rule.keyword else existing['keyword']
     new_tag_id = tag_id if tag_id is not None else existing['tag_id']
 
     if not new_keyword:
@@ -107,7 +110,7 @@ def update_tagging_rule(rule_id: int, keyword: Optional[str] = None, tag_name: O
         return False
 
     if tag_id is not None:
-        logger.warning(f"Tag {tag_name} does not exist")
+        logger.warning(f"Tag {tag_rule.tag_name} does not exist")
         return False
 
     updated = tag_rules_repo.update_tagging_rule(rule_id, new_keyword, new_tag_id)

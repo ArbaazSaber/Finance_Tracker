@@ -1,6 +1,7 @@
 from typing import List, Optional
 
 from utils.logger import logger
+from utils.util_functions import format_string
 from models.category import CategoryCreate
 
 import repositories.category_repository as category_repo
@@ -80,7 +81,7 @@ def add_new_category(category: CategoryCreate) -> int:
     Raises:
         ValueError: If the category name is empty or already exists.
     """
-    category_name = category.category_name.strip()
+    category_name = format_string(category.category_name)
     if not category_name:
         raise ValueError("Category name must not be empty")
 

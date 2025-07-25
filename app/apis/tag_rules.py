@@ -27,7 +27,7 @@ def get_rules_for_tag(tag_name: str):
 
 @router.post("/", status_code=201)
 def create_rule(rule: TagRuleBase):
-    created = tag_rules_service.create_tagging_rule(rule.keyword, rule.tag_name)
+    created = tag_rules_service.create_tagging_rule(rule)
     if not created:
         raise HTTPException(status_code=400, detail="Failed to create tagging rule")
     return created
@@ -37,8 +37,7 @@ def create_rule(rule: TagRuleBase):
 def update_rule(rule_id: int, update_data: TagRuleBase):
     updated = tag_rules_service.update_tagging_rule(
         rule_id,
-        keyword=update_data.keyword,
-        tag_name=update_data.tag_name,
+        tag_rule=update_data,
     )
     if not updated:
         raise HTTPException(status_code=404, detail="Failed to update tagging rule")

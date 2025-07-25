@@ -1,10 +1,11 @@
 from typing import List, Optional
 
 from utils.logger import logger
+from utils.util_functions import format_string
 from models.tag import TagBase
+
 import repositories.tag_repository as tag_repo
 import repositories.category_repository as category_repository
-
 
 def fetch_all_tags() -> List[tuple]:
     """
@@ -81,8 +82,8 @@ def upsert_tag(tag: TagBase) -> int:
     Raises:
         ValueError: If the tag name is empty.
     """
-    tag_name = tag.tag_name.strip()
-    category_name = tag.category_name.strip()
+    tag_name = format_string(tag.tag_name)
+    category_name = format_string(tag.category_name)
     if not tag_name:
         raise ValueError("Tag name must not be empty")
     if not category_name:
