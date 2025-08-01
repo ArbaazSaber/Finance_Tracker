@@ -10,4 +10,4 @@ class UserAuth(BaseModel):
     password: str
 
 class UserPasswordUpdateRequest(BaseModel):
-    new_password: str = Field(..., min_length=8, example="MyStrongPass123")
+    new_password: str = Field(..., min_length=8, example="MyStrongPass@123")

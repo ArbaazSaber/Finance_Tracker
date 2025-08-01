@@ -4,7 +4,7 @@ import re
 from utils.logger import logger
 from utils.security import hash_password, verify_password
 from models.user import UserCreate, UserAuth
-import repositories.user_repository as user_repository
+import repositories.users_repository as users_repository
 
 def get_user_by_id(user_id: int) -> Optional[Dict]:
     """
@@ -20,7 +20,7 @@ def get_user_by_id(user_id: int) -> Optional[Dict]:
         logger.warning(f"Invalid user_id: {user_id}")
         return None
 
-    return user_repository.get_user_by_id(user_id)
+    return users_repository.get_user_by_id(user_id)
 
 
 def get_user_by_username(username: str) -> Optional[Dict]:
@@ -37,7 +37,7 @@ def get_user_by_username(username: str) -> Optional[Dict]:
         logger.warning("Empty username provided.")
         return None
 
-    return user_repository.get_user_by_username(username.strip())
+    return users_repository.get_user_by_username(username.strip())
 
 
 def get_user_by_email(email: str) -> Optional[Dict]:
@@ -54,7 +54,7 @@ def get_user_by_email(email: str) -> Optional[Dict]:
         logger.warning(f"Invalid email format: {email}")
         return None
 
-    return user_repository.get_user_by_email(email.lower())
+    return users_repository.get_user_by_email(email.lower())
 
 
 def create_user(user_data: UserCreate) -> Optional[int]:
@@ -75,7 +75,7 @@ def create_user(user_data: UserCreate) -> Optional[int]:
         return None
 
     hashed_pwd = hash_password(user_data.password)
-    return user_repository.insert_user(
+    return users_repository.insert_user(
         username=user_data.username.strip(),
         email=user_data.email.lower(),
         hashed_password=hashed_pwd
@@ -92,7 +92,7 @@ def update_last_login(user_id: int) -> bool:
     Returns:
         bool: True if updated, False otherwise.
     """
-    return user_repository.update_last_login(user_id)
+    return users_repository.update_last_login(user_id)
 
 
 def update_email(user_id: int, email: str) -> bool:
@@ -110,7 +110,7 @@ def update_email(user_id: int, email: str) -> bool:
         logger.warning(f"Invalid email: {email}")
         return False
 
-    return user_repository.update_email(user_id, email.lower())
+    return users_repository.update_email(user_id, email.lower())
 
 
 def update_password(user_id: int, password: str) -> bool:
@@ -129,7 +129,7 @@ def update_password(user_id: int, password: str) -> bool:
         return False
 
     hashed_pwd = hash_password(password)
-    return user_repository.update_password(user_id, hashed_pwd)
+    return users_repository.update_password(user_id, hashed_pwd)
 
 
 def deactivate_user(user_id: int) -> bool:
@@ -142,7 +142,7 @@ def deactivate_user(user_id: int) -> bool:
     Returns:
         bool: True if deactivated, False otherwise.
     """
-    return user_repository.deactivate_user(user_id)
+    return users_repository.deactivate_user(user_id)
 
 def is_valid_email(email: str) -> bool:
     """
@@ -174,9 +174,9 @@ def authenticate_user(user_auth: UserAuth) -> Optional[int]:
     user_auth.username_or_email = user_auth.username_or_email.strip()
 
     # Try by email first, then fallback to username
-    user = user_repository.get_user_by_username(user_auth.username_or_email)
+    user = users_repository.get_user_by_username(user_auth.username_or_email)
     if user is None:
-        user = user_repository.get_user_by_email(user_auth.username_or_email.strip())
+        user = users_repository.get_user_by_email(user_auth.username_or_email.strip())
 
     if user is None:
         logger.info(f"Authentication failed: User '{user_auth.username_or_email}' not found.")

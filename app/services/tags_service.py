@@ -4,8 +4,8 @@ from utils.logger import logger
 from utils.util_functions import format_string
 from models.tag import TagBase
 
-import repositories.tag_repository as tag_repo
-import repositories.category_repository as category_repository
+import repositories.tags_repository as tag_repo
+import repositories.categories_repository as categories_repository
 
 def fetch_all_tags() -> List[tuple]:
     """
@@ -89,7 +89,7 @@ def upsert_tag(tag: TagBase) -> int:
     if not category_name:
         raise ValueError("Category name must not be empty")
 
-    category_id = category_repository.get_category_id(category_name)
+    category_id = categories_repository.get_category_id(category_name)
     if not category_id:
         raise ValueError(f"No Category Found with the name: {tag.category_name}")
     

@@ -3,7 +3,7 @@ from typing import List, Optional, Dict
 from models.tag_rule import TagRuleBase
 from utils.logger import logger
 from utils.util_functions import format_string
-from services.tag_service import fetch_tag_id_by_name
+from services.tags_service import fetch_tag_id_by_name
 
 import repositories.tag_rules_repository as tag_rules_repo
 

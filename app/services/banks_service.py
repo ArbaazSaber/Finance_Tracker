@@ -3,7 +3,7 @@ from typing import List, Optional
 from utils.logger import logger
 from models.bank import BankCreate
 
-import repositories.bank_repository as bank_repo
+import repositories.banks_repository as bank_repo
 
 def fetch_all_banks() -> List[tuple]:
     """

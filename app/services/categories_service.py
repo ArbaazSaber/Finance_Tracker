@@ -4,7 +4,7 @@ from utils.logger import logger
 from utils.util_functions import format_string
 from models.category import CategoryCreate
 
-import repositories.category_repository as category_repo
+import repositories.categories_repository as category_repo
 
 def fetch_all_categories() -> List[tuple]:
     """
