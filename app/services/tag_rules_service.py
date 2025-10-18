@@ -3,7 +3,7 @@ from typing import List, Optional, Dict
 from models.tag_rule import TagRuleBase
 from utils.logger import logger
 from utils.util_functions import format_string
-from services.tags_service import fetch_tag_id_by_name
+from services.tags_service import fetch_tag_by_name
 
 import repositories.tag_rules_repository as tag_rules_repo
 
@@ -28,11 +28,12 @@ def fetch_rules_for_tag(tag_name: str) -> List[Dict]:
     Returns:
         List[Dict]: A list of rules for that tag.
     """
-    tag_id = fetch_tag_id_by_name(tag_name)
-    if not tag_id:
+    tag = fetch_tag_by_name(tag_name)
+    if not tag:
         logger.warning(f"Tag {tag_name} does not exist")
         return []
 
+    tag_id = tag.get("tag_id") if isinstance(tag, dict) else tag
     rules = tag_rules_repo.get_tagging_rules_for_tag(tag_id)
     logger.info(f"Fetched {len(rules)} rules for tag {tag_name}")
     return rules
@@ -70,7 +71,7 @@ def create_tagging_rule(tag_rule: TagRuleBase) -> Optional[int]:
         logger.warning("Keyword must not be empty")
         return None
 
-    tag_id = fetch_tag_id_by_name(format_string(tag_rule.tag_name))
+    tag_id = fetch_tag_by_name(format_string(tag_rule.tag_name))
     if not tag_id:
         logger.warning(f"Tag {tag_rule.tag_name} does not exist")
         return None
@@ -100,7 +101,8 @@ def update_tagging_rule(rule_id: int, tag_rule: TagRuleBase) -> bool:
         return False
 
     # Default to existing values if not provided
-    tag_id = fetch_tag_id_by_name(format_string(tag_rule.tag_name))
+    tag = fetch_tag_by_name(format_string(tag_rule.tag_name))
+    tag_id = tag.get("tag_id") if isinstance(tag, dict) else tag
 
     new_keyword = tag_rule.keyword.strip().lower() if tag_rule.keyword else existing['keyword']
     new_tag_id = tag_id if tag_id is not None else existing['tag_id']
@@ -109,7 +111,7 @@ def update_tagging_rule(rule_id: int, tag_rule: TagRuleBase) -> bool:
         logger.warning("Keyword cannot be empty")
         return False
 
-    if tag_id is not None:
+    if tag_id is None:
         logger.warning(f"Tag {tag_rule.tag_name} does not exist")
         return False
 

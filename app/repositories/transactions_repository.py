@@ -17,10 +17,11 @@ def get_transaction_by_id(transaction_id: int) -> Optional[Transaction]:
         conn = get_connection(RealDictCursor)
         cursor = conn.cursor()
         cursor.execute(query, (transaction_id,))
-        return Transaction(**cursor.fetchone())
+        row = cursor.fetchone()
+        return Transaction(**row) if row else None
     except Exception as e:
         logger.error(f"[Repository] Error in get_transaction_by_id: {e}")
-        return []
+        return None
     finally:
         if cursor:
             cursor.close()
@@ -88,7 +89,8 @@ def insert_transaction(transaction: Transaction) -> Optional[int]:
     try:
         conn = get_connection()
         cursor = conn.cursor()
-        cursor.execute(query, (transaction.transaction_time,
+        cursor.execute(query, (
+            transaction.transaction_time,
             transaction.description,
             transaction.old_description,
             transaction.amount,
@@ -97,11 +99,11 @@ def insert_transaction(transaction: Transaction) -> Optional[int]:
             transaction.tag_id,
             transaction.category_id,
             transaction.acc_id,
-            transaction.user_id
+            transaction.user_id,
         ))
-        rule_id = cursor.fetchone()[0]
+        transaction_id = cursor.fetchone()[0]
         conn.commit()
-        return rule_id
+        return transaction_id
     except Exception as e:
         logger.error(f"[Repository] Error in insert_transaction: {e}")
         if conn:

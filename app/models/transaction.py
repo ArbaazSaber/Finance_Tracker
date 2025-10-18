@@ -1,35 +1,32 @@
 from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
-
-from enum import Enum
+from decimal import Decimal
 
 class Transaction(BaseModel):
-    transaction_id: Optional[int]
+    transaction_id: Optional[int] = None
     transaction_time: datetime
-    description: Optional[str]
-    old_description: str
-    amount: float
-    reference_id: str
-    type: str
-    created_at: Optional[datetime]
-    modified_at: Optional[datetime]
-    tag_id: int
-    category_id: int
-    acc_id: int
-    user_id: int
+    description: Optional[str] = None
+    old_description: Optional[str] = None
+    amount: Decimal
+    reference_id: Optional[str] = None
+    type: Optional[str] = None   # replace with Enum if desired
+    created_at: Optional[datetime] = None
+    modified_at: Optional[datetime] = None
+    tag_id: Optional[int] = None
+    category_id: Optional[int] = None
+    acc_id: Optional[int] = None
+    user_id: Optional[int] = None
+
 
 class TransactionUpsert(BaseModel):
-    transaction_id: Optional[int]
-    transaction_time: datetime
-    description: Optional[str]
-    old_description: str
-    amount: float
-    reference_id: str
-    type: str
-    created_at: Optional[datetime]
-    modified_at: Optional[datetime]
-    tag_name: str
-    category_name: str
-    acc_id: int
-    user_name: str
+    transaction_time: Optional[datetime] = None
+    description: Optional[str] = None
+    old_description: Optional[str] = None
+    amount: Optional[Decimal] = None
+    reference_id: Optional[str] = None
+    type: Optional[str] = None
+    tag_id: Optional[int] = None
+    category_id: Optional[int] = None
+    acc_id: Optional[int] = None
+    user_id: Optional[int] = None

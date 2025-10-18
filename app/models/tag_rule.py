@@ -1,10 +1,12 @@
-from pydantic import BaseModel
+from typing import Annotated
+from pydantic import BaseModel, StringConstraints
+
+class TaggingRule(BaseModel):
+    rule_id: int
+    keyword: Annotated[str, StringConstraints(min_length=1)]
+    tag_id: int
+
 
 class TagRuleBase(BaseModel):
-    keyword: str
-    tag_name: str
-
-class TaggingRuleOut(BaseModel):
-    rule_id: int
-    keyword: str
-    tag_name: str
+    keyword: Annotated[str, StringConstraints(min_length=1)]
+    tag_name: Annotated[str, StringConstraints(min_length=1)]

@@ -33,7 +33,7 @@ def create_user(user_data: UserCreate):
         raise HTTPException(status_code=400, detail="User creation failed")
     return {"user_id": user_id}
 
-@router.get("/authenticate", summary="Authenticate user")
+@router.post("/authenticate", summary="Authenticate user")
 def authenticate_user(user_auth: UserAuth):
     user = users_service.authenticate_user(user_auth)
     if user is None:

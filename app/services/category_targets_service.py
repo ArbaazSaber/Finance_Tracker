@@ -17,7 +17,11 @@ def add_category_target(category_target: CategoryTarget) -> Optional[int]:
         Optional[int]: The newly created target ID if successful, otherwise None.
     """
     try:
-        return category_target_repo.insert_category_target(category_target)
+        return category_target_repo.insert_category_target(
+            percentage=category_target.percentage,
+            category_id=category_target.category_id,
+            user_id=category_target.user_id,
+        )
     except Exception as e:
         logger.info(f"Error adding category target: {e}")
         return None

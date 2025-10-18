@@ -7,7 +7,7 @@ from models.tag import TagBase
 import repositories.tags_repository as tag_repo
 import repositories.categories_repository as categories_repository
 
-def fetch_all_tags() -> List[tuple]:
+def fetch_all_tags() -> List[dict]:
     """
     Fetch all Tags with their IDs and names.
 
@@ -18,20 +18,7 @@ def fetch_all_tags() -> List[tuple]:
     logger.info(f"Fetched {len(tags)} Tags")
     return tags
 
-
-def fetch_all_tag_names() -> List[str]:
-    """
-    Fetch the names of all Tags.
-
-    Returns:
-        List[str]: A list of tag names.
-    """
-    names = tag_repo.get_all_tag_names()
-    logger.info(f"Fetched tag names: {names}")
-    return names
-
-
-def fetch_tag_id_by_name(tag_name: str) -> Optional[int]:
+def fetch_tag_by_name(tag_name: str) -> Optional[dict]:
     """
     Retrieve the tag ID using the tag name.
 
@@ -44,7 +31,7 @@ def fetch_tag_id_by_name(tag_name: str) -> Optional[int]:
     if not tag_name.strip():
         raise ValueError("Tag name must not be empty")
 
-    tag = tag_repo.get_tag_id(tag_name.strip())
+    tag = tag_repo.get_tag_by_name(tag_name.strip())
     if not tag:
         logger.warning(f"No tag found with name: {tag_name}")
         return None
@@ -52,7 +39,7 @@ def fetch_tag_id_by_name(tag_name: str) -> Optional[int]:
     return tag
 
 
-def fetch_tag_name_by_id(tag_id: int) -> Optional[str]:
+def fetch_tag_by_id(tag_id: int) -> Optional[dict]:
     """
     Retrieve the tag name using the tag ID.
 
@@ -62,7 +49,7 @@ def fetch_tag_name_by_id(tag_id: int) -> Optional[str]:
     Returns:
         Optional[str]: Tag name if found, otherwise None.
     """
-    tag = tag_repo.get_tag_name(tag_id)
+    tag = tag_repo.get_tag_by_id(tag_id)
     if not tag:
         logger.warning(f"No tag found with ID: {tag_id}")
         return None
@@ -93,7 +80,7 @@ def upsert_tag(tag: TagBase) -> int:
     if not category_id:
         raise ValueError(f"No Category Found with the name: {tag.category_name}")
     
-    existing_tag = tag_repo.get_tag_id(tag_name)
+    existing_tag = tag_repo.get_tag_by_name(tag_name)
     if existing_tag:
         logger.info("Tag already present! Updating the category...")
         tag_id = tag_repo.update_tag(tag_name, category_id)

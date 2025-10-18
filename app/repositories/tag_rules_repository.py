@@ -8,7 +8,7 @@ def get_all_tagging_rules() -> Optional[List[Dict]]:
     """
     Returns a list of all (rule_id, keyword, tag_id) tuples.
     """
-    query = "SELECT tr.rule_id, tr.keyword, t.tag_name FROM tagging_rules tr JOIN tags t ON tr.tag_id = t.tag_id ORDER BY rule_id"
+    query = "SELECT tr.rule_id, tr.keyword, t.tag_name, t.tag_id FROM tagging_rules tr JOIN tags t ON tr.tag_id = t.tag_id ORDER BY rule_id"
     conn = None
     cursor = None
 
@@ -30,7 +30,7 @@ def get_tagging_rule_by_id(rule_id: int) -> Optional[Dict]:
     """
     Returns a tagging rule by its ID.
     """
-    query = "SELECT tr.rule_id, tr.keyword, t.tag_name FROM tagging_rules tr JOIN tags t ON tr.tag_id = t.tag_id WHERE rule_id = %s"
+    query = "SELECT tr.rule_id, tr.keyword, t.tag_name, t.tag_id FROM tagging_rules tr JOIN tags t ON tr.tag_id = t.tag_id WHERE rule_id = %s"
     conn = None
     cursor = None
 
@@ -52,7 +52,7 @@ def get_tagging_rules_for_tag(tag_id: int) -> Optional[Dict]:
     """
     Returns all tagging rules for a tag.
     """
-    query = "SELECT rule_id, keyword, tag_id FROM tagging_rules WHERE tag_id = %s"
+    query = "SELECT tr.rule_id, tr.keyword, t.tag_name, t.tag_id FROM tagging_rules tr JOIN tags t ON tr.tag_id = t.tag_id WHERE tr.tag_id = %s"
     conn = None
     cursor = None
 

@@ -1,50 +1,50 @@
 from psycopg2.extras import RealDictCursor
-from typing import Optional, List
+from typing import Optional, List, Dict
 
 from db.database import get_connection
 from utils.logger import logger
-from models.account import AccountBase
+from models.account import Account
 
-def get_account_by_id(acc_id: int) -> Optional[AccountBase]:
-    """
-    Fetches the Account given a Account ID.
-    Returns None if the Account does not exist.
-    """
-    query = "SELECT a.acc_name, u.username, b.bank_name FROM users u JOIN accounts a ON a.user_id = u.user_id JOIN banks b ON a.bank_id = b.bank_id WHERE a.acc_id = %s AND a.is_active = true"
+def get_account_by_id(acc_id: int) -> Optional[Dict]:
+    """Fetch the account by id and return a dict with account and related names."""
+    query = (
+        "SELECT a.acc_id, a.acc_name, a.user_id, a.bank_id, a.is_active, u.username AS user_name, b.bank_name "
+        "FROM users u JOIN accounts a ON a.user_id = u.user_id JOIN banks b ON a.bank_id = b.bank_id "
+        "WHERE a.acc_id = %s AND a.is_active = true"
+    )
     conn = None
     cursor = None
-
     try:
         conn = get_connection(RealDictCursor)
         cursor = conn.cursor()
         cursor.execute(query, (acc_id,))
         result = cursor.fetchone()
-        return result if result else None
+        return dict(result) if result else None
     except Exception as e:
-        logger.error(f"[Repository] Error in get_user_by_id: {e}")
+        logger.error(f"[Repository] Error in get_account_by_id: {e}")
     finally:
         if cursor:
             cursor.close()
         if conn:
             conn.close()
-    
-def get_accounts_by_user(user_id: int) -> Optional[List[AccountBase]]:
-    """
-    Fetches the Accounts given a User ID.
-    Returns None if the Accounts do not exist.
-    """
-    query = "SELECT a.acc_name, u.username, b.bank_name FROM users u JOIN accounts a ON a.user_id = u.user_id JOIN banks b ON a.bank_id = b.bank_id WHERE u.user_id = %s AND a.is_active = true"
+
+def get_accounts_by_user(user_id: int) -> Optional[List[Dict]]:
+    """Fetch all active accounts for a given user id and return list of dicts."""
+    query = (
+        "SELECT a.acc_id, a.acc_name, a.user_id, a.bank_id, a.is_active, u.username AS user_name, b.bank_name "
+        "FROM users u JOIN accounts a ON a.user_id = u.user_id JOIN banks b ON a.bank_id = b.bank_id "
+        "WHERE u.user_id = %s AND a.is_active = true"
+    )
     conn = None
     cursor = None
-
     try:
         conn = get_connection(RealDictCursor)
         cursor = conn.cursor()
         cursor.execute(query, (user_id,))
-        result = cursor.fetchall()
-        return result if result else None
+        rows = cursor.fetchall()
+        return [dict(r) for r in rows] if rows else None
     except Exception as e:
-        logger.error(f"[Repository] Error in get_user_by_id: {e}")
+        logger.error(f"[Repository] Error in get_accounts_by_user: {e}")
     finally:
         if cursor:
             cursor.close()
@@ -52,23 +52,19 @@ def get_accounts_by_user(user_id: int) -> Optional[List[AccountBase]]:
             conn.close()
 
 def create_account(acc_name: str, user_id: int, bank_id: int) -> Optional[int]:
-    """
-    Inserts a user into the database.
-    Returns the inserted user_id or None on failure.
-    """
-    query = "INSERT INTO accounts (acc_name, bank_id, user_id, is_active) VALUES (%s, %s, %s, true) RETURNING acc_id"
+    """Insert a new account and return the generated acc_id."""
+    query = "INSERT INTO accounts (acc_name, user_id, bank_id, is_active) VALUES (%s, %s, %s, true) RETURNING acc_id"
     conn = None
     cursor = None
-
     try:
         conn = get_connection()
         cursor = conn.cursor()
-        cursor.execute(query, (acc_name, bank_id, user_id))
-        user_id = cursor.fetchone()[0]
+        cursor.execute(query, (acc_name, user_id, bank_id))
+        acc_id = cursor.fetchone()[0]
         conn.commit()
-        return user_id
+        return acc_id
     except Exception as e:
-        logger.error(f"[Repository] Error in insert_user: {e}")
+        logger.error(f"[Repository] Error in create_account: {e}")
         if conn:
             conn.rollback()
         return None
@@ -120,7 +116,7 @@ def deactivate_account(acc_id: int) -> bool:
         conn.commit()
         return True
     except Exception as e:
-        logger.error(f"[Repository] Error in deactivate_user: {e}")
+        logger.error(f"[Repository] Error in deactivate_account: {e}")
         if conn:
             conn.rollback()
         return False

@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from typing import List, Optional
 
 import services.tag_rules_service as tag_rules_service
-from models.tag_rule import TagRuleBase, TaggingRuleOut
+from models.tag_rule import TagRuleBase
 
 router = APIRouter(prefix="/tagging_rules", tags=["Tagging Rules"])
 
