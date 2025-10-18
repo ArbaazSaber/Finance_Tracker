@@ -1,0 +1,673 @@
+          date                                                                                                  description                  txn_id     amount    type  bank
+1   2024-01-08                                                                                          SALARY FOR JUL-2024        0000407317042777  111468.00  Credit  HDFC
+2   2024-02-08                                                                  ATW-416021XXXXXX3309-S1ACBL06-BANGALORE-URB        0000000000006010   -5000.00   Debit  HDFC
+3   2024-02-08                                                                        POS 416021XXXXXX3309 SULTHAN GOLD PRI        0000000000000790  -12700.00   Debit  HDFC
+4   2024-06-08                      NEFT DR-ICIC0000401-MOHAMMED ARBAAZ SABER-NETBANK, MUM-N219243191633297-TOP UP AND GOLD        N219243191633297  -25000.00   Debit  HDFC
+5   2024-08-20                               NEFT DR-ICIC0000401-MOHAMMED ARBAAZ SABER-NETBANK, MUM-N233243217049429-TOP UP        N233243217049429  -10000.00   Debit  HDFC
+6   2024-08-26                                                                                                       PEARLS        0000423928431944   -4000.00   Debit  HDFC
+7   2024-08-28                               NEFT DR-ICIC0000401-MOHAMMED ARBAAZ SABER-NETBANK, MUM-N241243230510052-TOP UP        N241243230510052  -15000.00   Debit  HDFC
+8   2024-01-09                                                                                          SALARY FOR AUG-2024        0000408300779836   75244.00  Credit  HDFC
+9   2024-03-09                                             IMPS-424718371876-MOHAMMED ARBAAZ SABER-ICIC-XXXXXXXX7322-STOCKS        0000424718371876  -80000.00   Debit  HDFC
+10  2024-11-09                     IMPS-425500734337-CASHFREE PAYMENTS IN-IDFB-XXXXXXX6991-HYPERVERGETECHNOLOGIESPRIVATELIM        0000425500734337       1.00  Credit  HDFC
+11  2024-09-16                                        UPI-ANGEL LTD NSE-ANGELONENSE@HDFCBANK-NA-426021473387-PAYINGANGELONE        0000426021473387   -9000.00   Debit  HDFC
+12  2024-09-18                             UPI-ANGEL LTD NSE-ANGELONENSE@HDFCBANK-HDFC0000001-426229346660-PAYING ANGEL ONE        0000426229346660  -13500.00   Debit  HDFC
+13  2024-09-30                          UPI-MOHAMMED ARBAAZ SABE-9573896317@IBL-ICIC0000401-427451211539-PAYMENT FROM PHONE        0000427451211539   14784.00  Credit  HDFC
+14  2024-01-10                                                                               INTEREST PAID TILL 30-SEP-2024         000000000000000     245.00  Credit  HDFC
+15  2024-01-10                                                                                          SALARY FOR SEP-2024        0000409306481605   80494.00  Credit  HDFC
+16  2024-01-10                        IMPS-427523427231-AAHCB4709MPAY10SER-UTIB-XXXXXXXXXXX9444-PAY10SERVICESPRIVATELIMITED        0000427523427231    8802.00  Credit  HDFC
+17  2024-02-10                        IMPS-427613481815-AAHCB4709MPAY10SER-UTIB-XXXXXXXXXXX9444-PAY10SERVICESPRIVATELIMITED        0000427613481815    8799.00  Credit  HDFC
+18  2024-05-10                                                                                    ANGEL ONE LIMI-1036987669        0000410054625975   22500.00  Credit  HDFC
+19  2024-10-18                           UPI-RIGHT CHOICE TRADING-AURASTYLISH@YESBANK-YESB0000016-429290945714-PAY WITH UPI        0000429290945714  -44661.00   Debit  HDFC
+20  2024-11-27                                                                                                    GROCERIES        0000433297029283     -30.00   Debit  HDFC
+21  2024-11-29                                                                            ME DC SI 416021XXXXXX3309 NETFLIX        0000433413136037    -649.00   Debit  HDFC
+22  2024-11-29                                                                             CRV POS 416021******3309 NETFLIX         000000000000000       2.00  Credit  HDFC
+23  2024-01-12                                                                                          SALARY FOR NOV-2024        0000411282087237   81194.00  Credit  HDFC
+24  2024-01-12                                                                                                  BEYOND BRUG        0000433613628987   -1575.00   Debit  HDFC
+25  2024-02-12                                                                                                      VEGGIES        0000433721197049    -120.00   Debit  HDFC
+26  2024-02-12                                UPI-BI BI AYESHA-BHARATPE.90069115085@FBPE-NA-433721221882-PAY TO BHARATPE ME        0000433721221882    -260.00   Debit  HDFC
+27  2024-02-12                                                                                                         EGGS        0000433721236697    -195.00   Debit  HDFC
+28  2024-02-12                                                                                                   STATIONARY        0000433722167176     -35.00   Debit  HDFC
+29  2024-03-12                                                                                                         FOOD        0000433824623429    -150.00   Debit  HDFC
+30  2024-04-12                                                                                                      VEGGIES        0000433927987616     -20.00   Debit  HDFC
+31  2024-04-12                                                                                                      CHICKEN        0000433929426221     -95.00   Debit  HDFC
+32  2024-05-12                                                                                                      CHICKEN        0000434035801509    -281.00   Debit  HDFC
+33  2024-06-12                                        UPI-ANGEL LTD NSE-ANGELONENSE@HDFCBANK-NA-434137679532-PAYINGANGELONE        0000434137679532   -6000.00   Debit  HDFC
+34  2024-07-12                                                                                                       PETROL        0000434242615774    -512.54   Debit  HDFC
+35  2024-07-12                                                                                                        YEAST        0000434242632450     -50.00   Debit  HDFC
+36  2024-07-12                                                                        POS 416021XXXXXX3309 APOLLO PHARMACIE        0000434220712964    -220.00   Debit  HDFC
+37  2024-08-12                                                                        POS 416021XXXXXX3309 AMAZON GIFT CARD        0000434314377873    -709.00   Debit  HDFC
+38  2024-09-12                                                                                                       FLOWER        0000434450957074     -60.00   Debit  HDFC
+39  2024-10-12                                                                                               CHICKEN BREAST        0000434552877497     -90.00   Debit  HDFC
+40  2024-10-12                                                                                                    GROCERIES        0000434553235337    -175.00   Debit  HDFC
+41  2024-10-12                                                                                                    GROCERIES        0000434553275564     -30.00   Debit  HDFC
+42  2024-12-12        UPI-INDIAN RAILWAY CATER-INDIANRAILWAYCATERIYIM.RZP@MAIRTEL-AIRP0000001-434701010125-PAY VIA RAZORPAY        0000434701010125    -793.60   Debit  HDFC
+43  2024-12-14                                                                                                         FOOD        0000434969748709    -552.00   Debit  HDFC
+44  2024-12-14                                                                                              MINIGOLFMADNESS        0000434919470618   -1198.00   Debit  HDFC
+45  2024-12-15                                                                                                         FOOD        0000435075486174    -205.00   Debit  HDFC
+46  2024-12-15                                                                                                     SHEERMAL        0000435076732542     -90.00   Debit  HDFC
+47  2024-12-16                                                                                                    GROCERIES        0000435178106059     -20.00   Debit  HDFC
+48  2024-12-16                                                                                                         FOOD        0000435180427578    -900.00   Debit  HDFC
+49  2024-12-17                                                                                                          GAS        0000435284627662    -850.00   Debit  HDFC
+50  2024-12-17                                                                                                         FOOD        0000435285591986     -40.00   Debit  HDFC
+51  2024-12-17                                                                                           GROCERIES AND BOOK        0000435285664046    -496.50   Debit  HDFC
+52  2024-12-17                                                                                           GENERATING DYNAMIC        0000435285685190     -35.00   Debit  HDFC
+53  2024-12-17                                                                                                         FOOD        0000435285722553     -40.00   Debit  HDFC
+54  2024-12-18                                                                                           OIDBR000BKHTE8I@RE        0000435327813342    -299.00   Debit  HDFC
+55  2024-12-18                                                                                                         FOOD        0000435387920252    -180.00   Debit  HDFC
+56  2024-12-18                                                                                           INDIANRAILWAYCATER        0000435311289286    -407.25   Debit  HDFC
+57  2024-12-18                                                                                           SAYED BHAI TRAIN T        0000225687217200     407.25  Credit  HDFC
+58  2024-12-20                                       UPI-N  USHA-8073545525@YBL-SBIN0004926-001677109096-PAYMENT FROM PHONE        0000001677109096     500.00  Credit  HDFC
+59  2024-12-20                              NEFT DR-ICIC0001769-QURRATH UL AIN NUZHATH-NETBANK, MUM-N355243464871319-MOTHER        N355243464871319  -25000.00   Debit  HDFC
+60  2024-12-20                                                                                                    GROCERIES        0000435500894455     -20.00   Debit  HDFC
+61  2024-12-20                                                                                                      OUTSIDE        0000435501336845    -210.00   Debit  HDFC
+62  2024-12-20                                                                                                      OUTSIDE        0000435501672875    -449.00   Debit  HDFC
+63  2024-12-20                                                                                                         FUEL        0000435501866213    -110.00   Debit  HDFC
+64  2024-12-21      UPI-INDIAN RAILWAY CATER-INDIANRAILWAYCATERIYIM.RZP@MAIRTEL-AIRP0000001-435617978139-REFUND FOR UPI RRN        0000435617978139     705.00  Credit  HDFC
+65  2024-12-21                                                                                                    GROCERIES        0000435606956444    -152.00   Debit  HDFC
+66  2024-12-22                                                                                                    GROCERIES        0000435708686868     -68.00   Debit  HDFC
+67  2024-12-22                                                                                                         FUEL        0000435709885409    -100.00   Debit  HDFC
+68  2024-12-22                                                                                                      OUTSIDE        0000435710000565    -263.00   Debit  HDFC
+69  2024-12-22                                                                                           GENERATING DYNAMIC        0000435710967423   -2465.00   Debit  HDFC
+70  2024-12-23                                                                                                      CHARITY        0000435830911509   -1000.00   Debit  HDFC
+71  2024-12-24                                 UPI-GEDDIT CONVENIENCE P-GEDDITZEPTO.BDPG@ICICI-ICIC0DC0099-435941508795-UPI        0000435941508795    -182.14   Debit  HDFC
+72  2024-12-24            UPI-MALABAR GOLD PVT LTD-MALABARGOLDPVTLTD.RZP@AXISBANK-UTIB0000100-474852533594-PAY VIA RAZORPAY        0000474852533594  -10000.00   Debit  HDFC
+73  2024-12-24                                             UPI-ZEPTONOW-ZEPTONOW.ESBZ@HDFCBANK-HDFC0001794-435954057361-UPI        0000435954057361    -364.14   Debit  HDFC
+74  2024-12-24                                                                                                   FOR PANDIT        0000435954177795    -500.00   Debit  HDFC
+75  2024-12-24                                        UPI-MOHD  JAMIL-MOHAMMEDJAMEEL2412@OKSBI-SBIN0008189-435965897010-UPI        0000435965897010   -1000.00   Debit  HDFC
+76  2024-12-24                                              REV-UPI-50100738711936-ARBAAZFB26-1@OKHDFCBANK-435965897010-UPI        0000435965897010    1000.00  Credit  HDFC
+77  2024-12-24                                        UPI-MOHD  JAMIL-MOHAMMEDJAMEEL2412@OKSBI-SBIN0008189-435966376602-UPI        0000435966376602   -1000.00   Debit  HDFC
+78  2024-12-25                                          UPI-SUHEL PASHA-SIGNDESIGN74-1@OKICICI-CNRB0000033-436089745792-UPI        0000436089745792    -450.00   Debit  HDFC
+79  2024-12-26                                                                                                    GROCERIES        0000436128393644     -50.00   Debit  HDFC
+80  2024-12-26                                        UPI-MOHD  JAMIL-MOHAMMEDJAMEEL2412@OKSBI-SBIN0008189-436136522499-UPI        0000436136522499    1000.00  Credit  HDFC
+81  2024-12-26                                                                                                    GROCERIES        0000436163305154     -70.00   Debit  HDFC
+82  2024-12-26                                                                                                      OUTSIDE        0000436163981024    -350.00   Debit  HDFC
+83  2024-12-27                                                                            ME DC SI 416021XXXXXX3309 NETFLIX        0000436102698546    -649.00   Debit  HDFC
+84  2024-12-27                                                                                                    GROCERIES        0000436283684010     -50.00   Debit  HDFC
+85  2024-12-28                                                                                                    GROCERIES        0000436312495049    -120.00   Debit  HDFC
+86  2024-12-28                                                                                                YELAGIRI STAY        0000436313256545   -5000.00   Debit  HDFC
+87  2024-12-28                                            UPI-MUNEER SWEETS-PAYTMQR5EVSTW@PTYS-YESB0PTMUPI-436325640424-UPI        0000436325640424     -40.00   Debit  HDFC
+88  2024-12-29                                         UPI-MURUGAN IDLI SHOP  V-Q021825439@YBL-YESB0YBLUPI-436458492508-UPI        0000436458492508     -75.00   Debit  HDFC
+89  2025-01-01                                                                               INTEREST PAID TILL 31-DEC-2024         000000000000000    1235.00  Credit  HDFC
+90  2025-01-01                                                                                          SALARY FOR DEC-2024        0000412305442697   81874.00  Credit  HDFC
+91  2025-01-01                              UPI-ANGEL ONE LIMITED-ANGELONENSE@ICICI-ICIC0DC0099-536775650296-PAYINGANGELONE        0000536775650296  -12000.00   Debit  HDFC
+92  2025-02-01                              UPI-ANGEL ONE LIMITED-ANGELONENSE@ICICI-ICIC0DC0099-500249656752-PAYINGANGELONE        0000500249656752  -10000.00   Debit  HDFC
+93  2025-02-01                              UPI-ANGEL ONE LIMITED-ANGELONENSE@ICICI-ICIC0DC0099-500249666734-PAYINGANGELONE        0000500249666734   -1000.00   Debit  HDFC
+94  2025-02-01              UPI-MALABAR GOLD PVT LTD-MALABARGOLDPVTLTD.RZP@AXISBANK-UTIB0000100-500249760990-PAYVIARAZORPAY        0000500249760990  -10000.00   Debit  HDFC
+95  2025-02-01                                                                        POS 416021XXXXXX3309 AMAZON PAY INDIA        0000500216589234   -1313.00   Debit  HDFC
+96  2025-03-01                                             UPI-MOHAMMAD  ZUBAIR-Q604160105@YBL-YESB0YBLUPI-500325825533-UPI        0000500325825533     -79.00   Debit  HDFC
+97  2025-03-01                                             UPI-MOHAMMAD  ZUBAIR-Q604160105@YBL-YESB0YBLUPI-500327769022-UPI        0000500327769022    -345.00   Debit  HDFC
+98  2025-03-01                                                                                                      CHICKEN        0000500328890181    -240.00   Debit  HDFC
+99  2025-04-01                                                                                    ANGEL ONE LIMI-1040413590        0000501045867792     613.58  Credit  HDFC
+100 2025-04-01                                                                                                    GROCERIES        0000500452027624    -100.00   Debit  HDFC
+101 2025-04-01                          UPI-LAKEVIEW MILKBAR-LAKEVIEWMILKBAR.64034199@HDFCBANK-HDFC0000001-500463283824-UPI        0000500463283824    -638.00   Debit  HDFC
+102 2025-05-01                                                                                                         FUEL        0000500586674453   -3700.00   Debit  HDFC
+103 2025-05-01                                               UPI-IRCTC UTS-PAYTM-8796946@PTYBL-YESB0PTMUPI-500586701600-UPI        0000500586701600     -10.00   Debit  HDFC
+104 2025-05-01                                                                                                    GROCERIES        0000500515955318    -100.00   Debit  HDFC
+105 2025-05-01                                                                                                      OUTSIDE        0000500521680817    -219.00   Debit  HDFC
+106 2025-08-01                     UPI-NIRAJKUMARSHAW-BHARATPE.90072250582@FBPE-FDRL0001382-500853698837-PAY TO BHARATPE ME        0000500853698837     -20.00   Debit  HDFC
+107 2025-08-01                                                                                                      OUTSIDE        0000500861234680    -360.00   Debit  HDFC
+108 2025-10-01                                                                                                        LUNCH        0000501040081263   -1201.00   Debit  HDFC
+109 2025-10-01                                    UPI-MOHAMMED ASIF NADEEM-ASIFSABER3-1@OKAXIS-UTIB0001513-501049138896-UPI        0000501049138896  -50000.00   Debit  HDFC
+110 2025-10-01                                    UPI-MOHAMMED ASIF NADEEM-ASIFSABER3-1@OKAXIS-UTIB0001513-501049216590-UPI        0000501049216590  -48000.00   Debit  HDFC
+111 2025-11-01                                                       UPI-YOGESH-Q093100771@YBL-YESB0YBLUPI-501190090170-UPI        0000501190090170     -60.00   Debit  HDFC
+112 2025-11-01                                                                                                    MEDICINES        0000501191687316     -52.00   Debit  HDFC
+113 2025-11-01                                          UPI-NAVKAR MEDICALS-POS.11328265@INDUS-INDB0MERCHA-501191716513-UPI        0000501191716513     -40.00   Debit  HDFC
+114 2025-12-01                                             UPI-JAVEED PASHA-PAYTMQR617UQJ@PTYS-YESB0PTMUPI-501256158315-UPI        0000501256158315     -70.00   Debit  HDFC
+115 2025-12-01                                                                                                         EGGS        0000501257232910    -175.00   Debit  HDFC
+116 2025-01-13                                            00752320002361-TPT-LAPTOP-EUROFINS IT SOLUTIONS INDIA PRIVATE LTD        0000000202788152   -5000.00   Debit  HDFC
+117 2025-01-13           NEFT DR-ICIC0000401-MOHAMMED ASIF NADEEM SABER-NETBANK, MUM-HDFCN52025011303273480-ADD BENEFICIARY  HDFCN52025011303273480    -100.00   Debit  HDFC
+118 2025-01-15                                                                                           JIO20BR000BNVGH2N1        0000538192780652    -579.00   Debit  HDFC
+119 2025-01-15                                                                                                       PETROL        0000501500334355    -355.00   Debit  HDFC
+120 2025-01-18                           UPI-SPAR HYPERMARKETS-LANDMARKSPAR@AXL-UTIB0AXLUPI-501813802511-PAYMENT FOR PINE26        0000501813802511    -280.00   Debit  HDFC
+121 2025-01-18                                             UPI-ZEPTONOW-ZEPTONOW.ESBZ@HDFCBANK-HDFC0001794-501813844169-UPI        0000501813844169    -255.03   Debit  HDFC
+122 2025-01-19                                         UPI-SRI VIRINCHI VENTURE-Q302946503@YBL-YESB0YBLUPI-501947161750-UPI        0000501947161750    -310.00   Debit  HDFC
+123 2025-01-19                                         UPI-SRI VIRINCHI VENTURE-Q302946503@YBL-YESB0YBLUPI-501947448618-UPI        0000501947448618     -75.00   Debit  HDFC
+124 2025-01-19                                                                                                      FLOWERS        0000501967324749    -350.00   Debit  HDFC
+125 2025-01-20                                       UPI-N  USHA-8073545525@IBL-SBIN0004926-604679485970-PAYMENT FROM PHONE        0000604679485970    1000.00  Credit  HDFC
+126 2025-01-22                                                                                                      OUTSIDE        0000502206952393    -360.00   Debit  HDFC
+127 2025-01-24                              UPI-NYKAA ERETAIL PRIVAT-NYKAA.PAYU@HDFCBANK-HDFC0000499-502482525786-UPIINTENT        0000502482525786   -1428.00   Debit  HDFC
+128 2025-01-25                                               UPI-SYEDA  FIRDOSE-Q922822033@YBL-YESB0YBLUPI-502546032089-UPI        0000502546032089     -60.00   Debit  HDFC
+129 2025-01-25                                                                                                       SNACKS        0000502554103552    -200.00   Debit  HDFC
+130 2025-01-26                                                                                                      HAIRCUT        0000502676664440    -100.00   Debit  HDFC
+131 2025-01-26                                                                                                         FOOD        0000502688402472    -129.00   Debit  HDFC
+132 2025-01-26                                                UPI-RATHNAKAR K M-Q443595896@YBL-YESB0YBLUPI-502601624365-UPI        0000502601624365     -10.00   Debit  HDFC
+133 2025-01-27                                                                            ME DC SI 416021XXXXXX3309 NETFLIX        0000502603060854    -649.00   Debit  HDFC
+134 2025-01-27                                    UPI-SHREE MARKETING ASSO-PAYTM-67412621@PTYS-YESB0PTMUPI-502746931624-UPI        0000502746931624     -65.00   Debit  HDFC
+135 2025-01-28                                            UPI-INDIAN RAILWAYS-RAILSBIUPI11@SBI-SBIN0006812-502888618955-UPI        0000502888618955    -190.00   Debit  HDFC
+136 2025-01-29                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-502900130232-UPIINTENT        0000502900130232     -72.20   Debit  HDFC
+137 2025-01-29                                                                                                       PETROL        0000502912667411    -300.00   Debit  HDFC
+138 2025-01-30                                          UPI-M K SUBAIR-PAYTMQR4Z7NLVF6PY@PAYTM-YESB0PTMUPI-503070103441-UPI        0000503070103441     -55.00   Debit  HDFC
+139 2025-01-02                                                                                          SALARY FOR JAN-2025        0000501308776814  145633.00  Credit  HDFC
+140 2025-01-02                                                                                                    GROCERIES        0000503264168538    -115.00   Debit  HDFC
+141 2025-01-02                         UPI-ALI ARBAAZ-BHARATPE.90069133307@FBPE-FDRL0001382-503264386203-PAY TO BHARATPE ME        0000503264386203    -280.00   Debit  HDFC
+142 2025-01-02                                                    UPI-AKBAR-PAYTMQR617UU1@PTYS-YESB0PTMUPI-503264721844-UPI        0000503264721844     -35.00   Debit  HDFC
+143 2025-01-02                                                                                                    GROCERIES        0000503276474895    -110.00   Debit  HDFC
+144 2025-01-02                                                UPI-SYED   SHABAZ-Q266485919@YBL-YESB0YBLUPI-503276711551-UPI        0000503276711551    -175.00   Debit  HDFC
+145 2025-01-02                                           UPI-A L M D VEGETABLES-Q248353038@YBL-YESB0YBLUPI-503289846386-UPI        0000503289846386     -20.00   Debit  HDFC
+146 2025-02-02                                                                                                       SNACKS        0000503325324371    -100.00   Debit  HDFC
+147 2025-02-02                                            UPI-STREET LOUNGE-PAYTMQR5CQRGW@PTYS-YESB0PTMUPI-503334861841-UPI        0000503334861841    -120.00   Debit  HDFC
+148 2025-03-02                                        UPI-HOWLERS-MAB.037347012850147@AXISBANK-UTIB0000100-503479044949-UPI        0000503479044949    -175.00   Debit  HDFC
+149 2025-04-02                                                                                                    BREAKFAST        0000503504730927     -70.00   Debit  HDFC
+150 2025-04-02                                                 UPI-ADVAITA-PAYTM-79431653@PTYS-YESB0PTMUPI-503537157844-UPI        0000503537157844    -240.00   Debit  HDFC
+151 2025-05-02                                         UPI-B H ENTERPRISES-BHENTERPRISES@ICICI-ICIC0DC0099-503602110911-UPI        0000503602110911    -363.00   Debit  HDFC
+152 2025-09-02                                                       UPI-ZEPTO-ZEPTOONLINE@YBL-YESB0YBLUPI-504074116673-UPI        0000504074116673    -368.16   Debit  HDFC
+153 2025-12-02                                                       UPI-EATCLUB-EATCLUB@PTYBL-YESB0PTMUPI-504333681765-UPI        0000504333681765    -104.00   Debit  HDFC
+154 2025-02-15                                                                                                       SNACKS        0000100088238813    -100.00   Debit  HDFC
+155 2025-02-15                                                     UPI-D B YOGA-Q670056786@YBL-YESB0YBLUPI-100088366426-UPI        0000100088366426     -45.00   Debit  HDFC
+156 2025-02-15                                        UPI-HOWLERS-MAB.037347012850174@AXISBANK-UTIB0000100-100100301517-UPI        0000100100301517    -355.00   Debit  HDFC
+157 2025-02-16                                    UPI-SMOKY DOCKY-VYAPAR.170724804929@HDFCBANK-HDFC0000001-100139232504-UPI        0000100139232504    -313.00   Debit  HDFC
+158 2025-02-16                                                UPI-SHAHEER T-PAYTMQR65SDM9@PTYS-YESB0PTMUPI-100142032362-UPI        0000100142032362    -180.00   Debit  HDFC
+159 2025-02-19                                                                                                    BADMINTON        0000100274741266    -150.00   Debit  HDFC
+160 2025-02-21                                                  UPI-KAREEM ULLA-9986380050@AXL-SBIN0004926-100358767864-UPI        0000100358767864     -20.00   Debit  HDFC
+161 2025-02-21                                                   UPI-NASRIN TAJ-Q880923565@YBL-YESB0YBLUPI-100360389594-UPI        0000100360389594     -30.00   Debit  HDFC
+162 2025-02-21                           UPI-SPAR HYPERMARKETS-LANDMARKSPAR@YBL-YESB0YBLUPI-100369551469-PAYMENT FOR PINE31        0000100369551469    -300.00   Debit  HDFC
+163 2025-02-21                                                                UPI-NA-NA-HDFC0003962-505200695475-REQPAYLITE        0000505200695475    -500.00   Debit  HDFC
+164 2025-02-22                                                                        POS 416021XXXXXX3309 AMAZON GIFT CARD        0000505205265257   -1000.00   Debit  HDFC
+165 2025-02-23                                                                                                       PETROL        0000100480468797    -468.00   Debit  HDFC
+166 2025-02-23                                                                UPI-NA-NA-HDFC0003962-505400772625-REQPAYLITE        0000505400772625   -1000.00   Debit  HDFC
+167 2025-02-24                                                                                                      CHARITY        0000100540165124   -1000.00   Debit  HDFC
+168 2025-02-25                                       UPI-N  USHA-8073545525@IBL-SBIN0004926-092227205393-PAYMENT FROM PHONE        0000092227205393     100.00  Credit  HDFC
+169 2025-02-25                                        IMPS-505613380885-MOHAMMED ASIF NADEEM SABER-ICIC-XXXXXXXX8214-FATHER        0000505613380885 -120000.00   Debit  HDFC
+170 2025-02-26                    NEFT DR-ICIC0000401-MOHAMMED ASIF NADEEM SABER-NETBANK, MUM-HDFCN52025022680185137-FATHER  HDFCN52025022680185137  -30000.00   Debit  HDFC
+171 2025-02-26              UPI-MALABAR GOLD PVT LTD-MALABARGOLDPVTLTD.RZP@AXISBANK-UTIB0000100-100600444201-PAYVIARAZORPAY        0000100600444201  -10000.00   Debit  HDFC
+172 2025-02-26                                        IMPS-505709349228-MOHAMMED ASIF NADEEM SABER-ICIC-XXXXXXXX8214-FATHER        0000505709349228  -30000.00   Debit  HDFC
+173 2025-02-26                                                                            ME DC SI 416021XXXXXX3309 NETFLIX        0000505716167980    -649.00   Debit  HDFC
+174 2025-02-28                                       UPI-QURRATH UL AIN NUZHA-NUZZIE13@OKICICI-ICIC0001769-100703780064-UPI        0000100703780064   -5000.00   Debit  HDFC
+175 2025-01-03                                                                                          SALARY FOR FEB-2025        0000502286984240   75164.00  Credit  HDFC
+176 2025-04-03                           UPI-HEED COMMUNICATIONS -PULSE2PIXEL@YESBANK-YESB0000016-506392312685-PAY WITH UPI        0000506392312685  -25000.00   Debit  HDFC
+177 2025-05-03                                              IMPS-506422706908-MOHAMMED ASIF NADEEM-ICIC-XXXXXXXX8214-FAMILY        0000506422706908   18705.00  Credit  HDFC
+178 2025-05-03                        UPI-SIGARAMBOTLA  SURESH-SURESH619881@AXL-KKBK0007462-624307302465-PAYMENT FROM PHONE        0000624307302465  -18705.00   Debit  HDFC
+179 2025-06-03                                               IMPS-506520886738-INSTANTPAY INDIA LTD-IDFB-XXXXXXX9701-PAYOUT        0000506520886738    9081.00  Credit  HDFC
+180 2025-08-03                                                                UPI-NA-NA-HDFC0003962-506700168369-REQPAYLITE        0000506700168369   -1500.00   Debit  HDFC
+181 2025-09-03                                        UPI-FEMINA CUT PIECE-PAYTMQR13JWR9@PAYTM-YESB0PTMUPI-101203091982-UPI        0000101203091982   -1650.00   Debit  HDFC
+182 2025-10-03                          UPI-GLOSSGLOW PRIVATE LI-URBANEAPPEAL@YESBANK-YESB0000016-506909703267-PAY WITH UPI        0000506909703267  -10000.00   Debit  HDFC
+183 2025-12-03                                                                                           JIO20BR000BULSI151        0000101357451868    -799.00   Debit  HDFC
+184 2025-03-13                         UPI-UNIKEEY TRADING PRIV-SNAPSHOPPEDIA@YESBANK-YESB0000016-507218487316-PAY WITH UPI        0000507218487316  -10000.00   Debit  HDFC
+185 2025-03-13                                     UPI-MOHAMMED ASIF NADEEM-ASIFSABER3@OKICICI-ICIC0000245-507242318180-UPI        0000507242318180   18500.00  Credit  HDFC
+186 2025-03-13                            UPI-UNIVISTA TRADERS PRI-SPARKNCART@YESBANK-YESB0000016-507218614113-PAY WITH UPI        0000507218614113  -18500.00   Debit  HDFC
+187 2025-03-13                                                                                           GENERATING DYNAMIC        0000101444200284    -981.00   Debit  HDFC
+188 2025-03-14                                  UPI-M D ZAINULLA-9448137996@YBL-HDFC0004210-893269830379-PAYMENT FROM PHONE        0000893269830379    -170.00   Debit  HDFC
+189 2025-03-15                                                                               POS 416021XXXXXX3309 RETAILCCA        0000507415157060     -36.00   Debit  HDFC
+190 2025-03-15                                   UPI-IRSHAD KHAN-8050699386@IBL-INDB0000229-774824526355-PAYMENT FROM PHONE        0000774824526355    -150.00   Debit  HDFC
+191 2025-03-15                                           UPI-MOHAMMED HASSAN-PAYTM.S1341E5@PTY-YESB0MCHUPI-101528961140-UPI        0000101528961140    -300.00   Debit  HDFC
+192 2025-03-15                                                UPI-MUNAWAR PASHA-Q179702206@YBL-YESB0YBLUPI-101529119073-UPI        0000101529119073    -150.00   Debit  HDFC
+193 2025-03-15                 UPI-NKP EMPIRE VENTURES -NKPEMPIREVENTURESPVT.63223033@HDFCBANK-HDFC0MERUPI-101530689427-UPI        0000101530689427    -200.00   Debit  HDFC
+194 2025-03-15                                      UPI-GFB  NEXUS MALL-PAYTM.D14285162646@PTY-YESB0MCHUPI-101533648796-UPI        0000101533648796    -205.00   Debit  HDFC
+195 2025-03-15                                      UPI-GFB  NEXUS MALL-PAYTM.D14285162646@PTY-YESB0MCHUPI-101534086205-UPI        0000101534086205    -205.00   Debit  HDFC
+196 2025-03-16                           UPI-WWW EXCITEL COM-EXCITEL.PAYU@HDFCBANK-HDFC0MERUPI-100176156139-UPI TRANSACTION        0000100176156139   -2889.82   Debit  HDFC
+197 2025-03-16                                           UPI-A L M D VEGETABLES-Q297253553@YBL-YESB0YBLUPI-101576200520-UPI        0000101576200520    -230.00   Debit  HDFC
+198 2025-03-16                                           UPI-FAYAQ ULLA SHARIFF-Q543368046@YBL-YESB0YBLUPI-101576507556-UPI        0000101576507556    -230.00   Debit  HDFC
+199 2025-03-16                                              UPI-ASHRAF NISHA-PAYTM.S17B6B1@PTY-YESB0MCHUPI-101579724673-UPI        0000101579724673     -68.00   Debit  HDFC
+200 2025-03-16                                   UPI-UIDAI-UIDAI726685.RZP@RXAIRTEL-AIRP0000011-101596642400-PAYMENTTOUIDAI        0000101596642400     -50.00   Debit  HDFC
+201 2025-03-17                        UPI-RAKSHIT SHIRISH RUDR-8904637770-2@AXL-UTIB0004071-706800633059-PAYMENT FROM PHONE        0000706800633059     600.00  Credit  HDFC
+202 2025-03-18                                    UPI-MOHAMMED ASIF NADEEM-ASIFSABER3-1@OKAXIS-UTIB0001513-507773354046-UPI        0000507773354046   45000.00  Credit  HDFC
+203 2025-03-18                 UPI-VANDELAY EXPORTS PRI-VANDELAYEXPORTS.PAY10@SBI-SBIN0006209-100121592040-PAY WITH SBI UPI        0000100121592040  -45000.00   Debit  HDFC
+204 2025-03-18                                 UPI-NYKAA ERETAIL PRIVAT-NYKAA.PAYU@ICICI-ICIC0DC0099-101668951529-UPIINTENT        0000101668951529   -2189.00   Debit  HDFC
+205 2025-03-18                           UPI-NYRAA ECOMMERCE INDI-URBANDRAPES@YESBANK-YESB0000016-507732121288-PAY WITH UPI        0000507732121288  -45000.00   Debit  HDFC
+206 2025-03-18                                           UPI-ABDUL  KHADEER-AMZN0010237509@APL-SBIN0005407-101683728233-UPI        0000101683728233    -200.00   Debit  HDFC
+207 2025-03-18                                                                                                      OUTSIDE        0000101695517778    -100.00   Debit  HDFC
+208 2025-03-18                                     UPI-AMAZON PAY-AMAZONUPI@APL-UTIB0000100-101697900537-YOU ARE PAYING FOR        0000101697900537   -1293.00   Debit  HDFC
+209 2025-03-19                          UPI-AYESHA THAHNIYATH SA-9945178600@YBL-HDFC0000365-761836325177-PAYMENT FROM PHONE        0000761836325177    2200.00  Credit  HDFC
+210 2025-03-19                                     UPI-MOHAMMED ASIF NADEEM-ASIFSABER3@OKICICI-ICIC0000245-544451326691-UPI        0000544451326691   45000.00  Credit  HDFC
+211 2025-03-19                          UPI-AAFIFA ENTERPRISES-DAPPERPROPLACE@YESBANK-YESB0000016-507833866372-PAY WITH UPI        0000507833866372  -45000.00   Debit  HDFC
+212 2025-03-19                                        UPI-HOWLERS-MAB.037347012850174@AXISBANK-UTIB0000100-101732887848-UPI        0000101732887848     -85.00   Debit  HDFC
+213 2025-03-19                                                 UPI-SURAKSHA D S-Q539038428@YBL-YESB0YBLUPI-101734014178-UPI        0000101734014178     -89.00   Debit  HDFC
+214 2025-03-19                                                                               POS 416021XXXXXX3309 RETAILCCA        0000507821021371    -915.00   Debit  HDFC
+215 2025-03-20                                                                                                GRILL CHICKEN        0000101784759779    -200.00   Debit  HDFC
+216 2025-03-20                                                                               POS 416021XXXXXX3309 RETAILCCA        0000507921110903    -259.00   Debit  HDFC
+217 2025-03-21                                   UPI-AMAZON INDIA-AMAZONUPI@APL-UTIB0000100-508069034783-YOU ARE PAYING FOR        0000508069034783    -119.00   Debit  HDFC
+218 2025-03-21                          UPI-MOHAMMED ASIF NADEEM-7799578680@AXL-ICIC0000245-321047983256-PAYMENT FROM PHONE        0000321047983256    -399.00   Debit  HDFC
+219 2025-03-21                                                                                                        FITRA        0000049769754549    -300.00   Debit  HDFC
+220 2025-03-21                                              IMPS-508019521997-PAY10 SERVICES PRIVA-IDFB-XXXXXXX0150-IMPSTXN        0000508019521997   91247.00  Credit  HDFC
+221 2025-03-21                                               UPI-SAMAD  HUSSAIN-Q806478421@YBL-YESB0YBLUPI-101841979414-UPI        0000101841979414     -80.00   Debit  HDFC
+222 2025-03-21                                         UPI-BP PETROL PUMP  BP B-Q561098376@YBL-YESB0YBLUPI-101846908325-UPI        0000101846908325    -475.00   Debit  HDFC
+223 2025-03-22                                              IMPS-508105923005-PAY10 SERVICES PRIVA-IDFB-XXXXXXX0150-IMPSTXN        0000508105923005   13703.00  Credit  HDFC
+224 2025-03-23                                               IMPS-508219362693-INSTANTPAY INDIA LTD-IDFB-XXXXXXX9701-PAYOUT        0000508219362693    9135.00  Credit  HDFC
+225 2025-03-23                  UPI-NATURALS STMARKS ROA-PAYTMQR28100505010110UKQRV99E88@PAYTM-YESB0PTMUPI-101955149316-UPI        0000101955149316    -425.00   Debit  HDFC
+226 2025-03-24                                                 UPI-KRISHNA  M-KRISHNAM4968@SBI-SBIN0040871-101980489660-UPI        0000101980489660    -103.00   Debit  HDFC
+227 2025-03-26                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-102102002116-UPIINTENT        0000102102002116     -70.00   Debit  HDFC
+228 2025-03-26                                              IMPS-508522419888-PAY10 SERVICES PRIVA-IDFB-XXXXXXX0150-IMPSTXN        0000508522419888   10135.00  Credit  HDFC
+229 2025-03-26                                              IMPS-508523509078-PAY10 SERVICES PRIVA-IDFB-XXXXXXX0150-IMPSTXN        0000508523509078   10134.00  Credit  HDFC
+230 2025-03-27                                              IMPS-508605654170-PAY10 SERVICES PRIVA-IDFB-XXXXXXX0150-IMPSTXN        0000508605654170   10134.00  Credit  HDFC
+231 2025-03-27                                                                            ME DC SI 416021XXXXXX3309 NETFLIX        0000508502504212    -649.00   Debit  HDFC
+232 2025-03-27                          UPI-AAMIRA ENTERPRISES-TRENDZELEGANCE@YESBANK-YESB0000016-508658827093-PAY WITH UPI        0000508658827093  -48760.00   Debit  HDFC
+233 2025-03-27                          UPI-AAFIFA ENTERPRISES-DAPPERPROPLACE@YESBANK-YESB0000016-508658830753-PAY WITH UPI        0000508658830753  -45000.00   Debit  HDFC
+234 2025-03-27                                     UPI-TACO BELL ROYAL MEEN-PAYTM-7977105@PTYS-YESB0PTMUPI-102148882837-UPI        0000102148882837    -261.00   Debit  HDFC
+235 2025-03-27                                                                                                    GROCERIES        0000102160424598    -105.00   Debit  HDFC
+236 2025-03-28                                                                                                   CELLO TQPE        0000102177256959     -50.00   Debit  HDFC
+237 2025-03-28                                                                                                       MASJID        0000102186228630    -100.00   Debit  HDFC
+238 2025-03-28                                      UPI-SHABEENA-Q272596735@YBL-YESB0YBLUPI-539095659387-PAYMENT FROM PHONE        0000539095659387     -60.00   Debit  HDFC
+239 2025-03-29                                                                                                      CHARITY        0000102240627750   -8400.00   Debit  HDFC
+240 2025-03-30                                         UPI-LIFE CARE MEDICALS 2-Q614467359@YBL-YESB0YBLUPI-102278263279-UPI        0000102278263279     -75.00   Debit  HDFC
+241 2025-03-30                         UPI-ALI ARBAAZ-BHARATPE.90069133307@FBPE-FDRL0001382-102309088643-PAY TO BHARATPE ME        0000102309088643    -250.00   Debit  HDFC
+242 2025-03-30                           UPI-SPAR HYPERMARKETS-LANDMARKSPAR@YBL-YESB0YBLUPI-102310080193-PAYMENT FOR PINE37        0000102310080193    -439.10   Debit  HDFC
+243 2025-03-30                                          UPI-M K SUBAIR-PAYTMQR4Z7NLVF6PY@PAYTM-YESB0PTMUPI-102310798754-UPI        0000102310798754    -272.00   Debit  HDFC
+244 2025-03-30                                             UPI-ZEPTONOW-ZEPTONOW.ESBZ@HDFCBANK-HDFC0MERUPI-102314436624-UPI        0000102314436624    -315.00   Debit  HDFC
+245 2025-03-31                                        UPI-BUNNY BAKERS-PAYTMQR125C4DUWWS@PAYTM-YESB0PTMUPI-102382920707-UPI        0000102382920707    -125.00   Debit  HDFC
+246 2025-03-31                                                                                                        EXTRA        0000102382939913     -10.00   Debit  HDFC
+247 2025-03-31                                                                                              RUQAIYA PARATHA        0000102383297866    -220.00   Debit  HDFC
+248 2025-03-31                                            UPI-RASHID AHMED-RASHID.ME19@OKICICI-BARB0VJVIJB-545692705071-UPI        0000545692705071     336.51  Credit  HDFC
+249 2025-03-31                                                                                                         EIDI        0000509020334750     499.00  Credit  HDFC
+250 2025-03-31                                              UPI-RUQAIYA AHMED-RUQAIYA95@OKAXIS-BKID0008423-509043333094-UPI        0000509043333094       1.00  Credit  HDFC
+251 2025-01-04                                                                               INTEREST PAID TILL 31-MAR-2025         000000000000000    1074.00  Credit  HDFC
+252 2025-01-04                                                                                          SALARY FOR MAR-2025        0000503319279961   73821.00  Credit  HDFC
+253 2025-02-04                                UPI-SHAISTHA FATHIMA-SHAISTHA.SHAKEER@OKHDFCBANK-CNRB0000033-102457489094-UPI        0000102457489094     200.00  Credit  HDFC
+254 2025-03-04                           UPI-CORNER HOUSE ICE CRE-VYAPAR.172400988805@HDFCBANK-HDFC0MERUPI-102543185368-UPI        0000102543185368    -519.00   Debit  HDFC
+255 2025-03-04                                      UPI-PRABHANTH ENTERPRISE-88094444@IDFCBANK-IDFB0080185-102544358120-UPI        0000102544358120    -180.00   Debit  HDFC
+256 2025-03-04                                    UPI-MOHAMMAD MANSOOR-PAYTMQRD2HB61H0G9@PAYTM-YESB0PTMUPI-102555265850-UPI        0000102555265850     -20.00   Debit  HDFC
+257 2025-04-04              UPI-MALABAR GOLD PVT LTD-MALABARGOLDPVTLTD.RZP@AXISBANK-UTIB0000100-102569934525-PAYVIARAZORPAY        0000102569934525  -10000.00   Debit  HDFC
+258 2025-07-04                                              UPI-SHIVA KUMAR M R-CKCINFO232@AXL-FDRL0007777-102741768824-UPI        0000102741768824     -95.00   Debit  HDFC
+259 2025-07-04                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-102741835214-UPIINTENT        0000102741835214     -40.00   Debit  HDFC
+260 2025-07-04                                                                                                       PARCEL        0000381232782599    -100.00   Debit  HDFC
+261 2025-09-04                                    UPI-SOWBHAGYA AND CO-PAYTM-46071647VDQM@PTYS-YESB0PTMUPI-102903326713-UPI        0000102903326713    -486.81   Debit  HDFC
+262 2025-09-04                                      UPI-DOMINOS PIZZA-DOMINOSPIZZAONLINE@PTYBL-YESB0PTMUPI-102903492513-UPI        0000102903492513     -51.45   Debit  HDFC
+263 2025-10-04                                                     UPI-RAGHU  M-Q492421884@YBL-YESB0YBLUPI-102916206877-UPI        0000102916206877     -48.00   Debit  HDFC
+264 2025-10-04                                UPI-DOMINOS PIZZA-DOMINOSPIZZA.41650421@HDFCBANK-HDFC0MERUPI-102957129883-UPI        0000102957129883    -102.90   Debit  HDFC
+265 2025-11-04                                           UPI-BLOSSOM BOOK HOUSE-Q639989935@YBL-YESB0YBLUPI-102973776961-UPI        0000102973776961    -730.00   Debit  HDFC
+266 2025-11-04                                     UPI-EMPIRE GIFTS CHURCH -PAYTMQR60V49C@PTYS-YESB0PTMUPI-102974125849-UPI        0000102974125849      -5.00   Debit  HDFC
+267 2025-11-04                                                                                                         AUTO        0000103013029726    -439.00   Debit  HDFC
+268 2025-04-13                                                                                                         EIDI        0000103105299348    -300.00   Debit  HDFC
+269 2025-04-13                                                                                                         EIDI        0000103105316898    -300.00   Debit  HDFC
+270 2025-04-13                                                                                           HALLI MANE GROUNDN        0000103109837962    -760.00   Debit  HDFC
+271 2025-04-14                                         UPI-SRI VIRINCHI VENTURE-Q302946503@YBL-YESB0YBLUPI-103140466335-UPI        0000103140466335    -100.00   Debit  HDFC
+272 2025-04-16                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-103294693197-UPIINTENT        0000103294693197     -50.00   Debit  HDFC
+273 2025-04-17                                     UPI-TACO BELL GOPALAN IN-PAYTM-3606629@PTYS-YESB0PTMUPI-103343210636-UPI        0000103343210636    -205.00   Debit  HDFC
+274 2025-04-17                                                                          IB BILLPAY DR-HDFC97-361010XXXX8278        NB17223140019010   -9748.00   Debit  HDFC
+275 2025-04-18                          UPI-AYESHA THAHNIYATH SA-9945178600@YBL-HDFC0000365-672885762989-PAYMENT FROM PHONE        0000672885762989    3000.00  Credit  HDFC
+276 2025-04-18                                UPI-TASMIYA KOUSER-Q942933398@YBL-YESB0YBLUPI-268207414476-PAYMENT FROM PHONE        0000268207414476    -150.00   Debit  HDFC
+277 2025-04-18                                UPI-JUNYS-JUNYS.42794234@HDFCBANK-HDFC0MERUPI-575772688946-PAYMENT FROM PHONE        0000575772688946    -231.00   Debit  HDFC
+278 2025-04-18                                   UPI-NEMAN  LAMA-Q173673632@YBL-YESB0YBLUPI-407630059175-PAYMENT FROM PHONE        0000407630059175    -130.00   Debit  HDFC
+279 2025-04-18  UPI-BINNY MILL ROAD GANG-BINNYMILLROADGANGANA.63471968@HDFCBANK-HDFC0MERUPI-357137799602-PAYMENT FROM PHONE        0000357137799602    -291.00   Debit  HDFC
+280 2025-04-18                                   UPI-VIJAY KUMAR-Q339381323@YBL-YESB0YBLUPI-536955977806-PAYMENT FROM PHONE        0000536955977806    -150.00   Debit  HDFC
+281 2025-04-18                                                                                                    MILK DIDI        0000520386022560     -54.00   Debit  HDFC
+282 2025-04-18         UPI-N RAVI PRATHAP-PAYTMQR281005050101TJ504JQV3TYA@PAYTM-YESB0PTMUPI-470507638366-PAYMENT FROM PHONE        0000470507638366     -42.00   Debit  HDFC
+283 2025-04-20                                                                                                         EGGS        0000486485152081    -155.00   Debit  HDFC
+284 2025-04-21                        UPI-RAKSHIT SHIRISH RUDR-8904637770-2@AXL-UTIB0004071-904596640071-PAYMENT FROM PHONE        0000904596640071    3915.00  Credit  HDFC
+285 2025-04-21                        UPI-RAKSHIT SHIRISH RUDR-8904637770-2@AXL-UTIB0004071-764194542506-PAYMENT FROM PHONE        0000764194542506     250.00  Credit  HDFC
+286 2025-04-21                                                                                                   STATIONERY        0000499190366757     -16.00   Debit  HDFC
+287 2025-04-22                                                                                                      OUTSIDE        0000595628697586    -144.00   Debit  HDFC
+288 2025-04-23                             UPI-SRINIDHI VAIBHAVA-Q813728743@YBL-YESB0YBLUPI-559022597047-PAYMENT FROM PHONE        0000559022597047    -435.00   Debit  HDFC
+289 2025-04-23                                                                              POS 416021XXXXXX3309 RETAIL  CC        0000511310012657     -33.00   Debit  HDFC
+290 2025-04-25                          UPI-SRI NEW A B R XEROX -Q356440634@YBL-YESB0YBLUPI-157036564894-PAYMENT FROM PHONE        0000157036564894     -20.00   Debit  HDFC
+291 2025-04-26                                UPI-VYKUNTAM GROUP-Q888935573@YBL-YESB0YBLUPI-890830820158-PAYMENT FROM PHONE        0000890830820158    -130.00   Debit  HDFC
+292 2025-04-26               UPI-MR  VENKATESWARA RAO-BHARATPE.90072193806@FBPE-FDRL0001382-103805946530-PAY TO BHARATPE ME        0000103805946530   -1104.00   Debit  HDFC
+293 2025-04-27                                                                            ME DC SI 416021XXXXXX3309 NETFLIX        0000511603748251    -649.00   Debit  HDFC
+294 2025-04-29                      UPI-WELCOME PROVISION ST-PAYTMQR62M0QI@PTYS-YESB0PTMUPI-192677158640-PAYMENT FROM PHONE        0000192677158640     -95.00   Debit  HDFC
+295 2025-04-29   UPI-JUICE JUNCTION ST MA-PAYTMQR28100505010193VN0ZYXLQYY@PAYTM-YESB0PTMUPI-528737144265-PAYMENT FROM PHONE        0000528737144265     -90.00   Debit  HDFC
+296 2025-04-29                                                                                           JIO20BR000C590UCG2        0000563794934858     -19.00   Debit  HDFC
+297 2025-04-30                                                                                                           HL        0000830200519463    -500.00   Debit  HDFC
+298 2025-04-30                                                                                                       PETROL        0000104048192410    -516.00   Debit  HDFC
+299 2025-01-05                                                                                          SALARY FOR APR-2025        0000504305404133   86931.00  Credit  HDFC
+300 2025-02-05                           UPI-SPAR HYPERMARKETS-LANDMARKSPAR@YBL-YESB0YBLUPI-104120205765-PAYMENT FOR PINE43        0000104120205765   -1023.00   Debit  HDFC
+301 2025-02-05                                       UPI-N  USHA-8073545525@YBL-SBIN0004926-572206300306-PAYMENT FROM PHONE        0000572206300306     500.00  Credit  HDFC
+302 2025-03-05                                                                                                    GROCERIES        0000104177019915     -60.00   Debit  HDFC
+303 2025-03-05                                              UPI-IMRANA BANU-9845864530ARIF@YBL-KARB0000061-104183950626-UPI        0000104183950626     -85.00   Debit  HDFC
+304 2025-03-05                                              REV-UPI-50100738711936-ARBAAZFB26-1@OKHDFCBANK-104183950626-UPI        0000104183950626      85.00  Credit  HDFC
+305 2025-03-05                         UPI-ARIF  BASHA-ARIFBASHA4530@OKHDFCBANK-SBIN0004926-111122596611-PAYMENT FROM PHONE        0000111122596611     -85.00   Debit  HDFC
+306 2025-03-05                                                 UPI-RITA  CHETRY-Q917685957@YBL-YESB0YBLUPI-104211514068-UPI        0000104211514068     -70.00   Debit  HDFC
+307 2025-03-05                UPI-MALABAR GOLD PVT LTD-MALABARGOLDPVTL776.RZP@ICICI-ICIC0DC0099-104221084193-PAYVIARAZORPAY        0000104221084193  -10000.00   Debit  HDFC
+308 2025-05-05                                                                                                          ZIP        0000104322705123     -27.00   Debit  HDFC
+309 2025-05-05                                                                                                   STATIONERY        0000104323235153     -40.00   Debit  HDFC
+310 2025-05-05                                     UPI-GOOGLE INDIA DIGITAL-PLAYSTORE@AXISBANK-UTIB0000553-104337904219-UPI        0000104337904219     -29.00   Debit  HDFC
+311 2025-06-05                                        UPI-ANIL KUMAR N-PAYTMQROAVGVBBM6Z@PAYTM-YESB0PTMUPI-104369316364-UPI        0000104369316364     -20.00   Debit  HDFC
+312 2025-06-05                                                                                                  OFFICE FOOD        0000104378629051    -155.00   Debit  HDFC
+313 2025-06-05                                   UPI-MANGLORE STORE-GPAY-11251984158@OKBIZAXIS-UTIB0000553-104391893052-UPI        0000104391893052    -135.00   Debit  HDFC
+314 2025-08-05                       NEFT CR-ICIC0000103-MOHAMMED ARBAAZ SABER-MOHAMMED ARBAAZ SABER-ICICN52025050800805358  ICICN52025050800805358   36185.78  Credit  HDFC
+315 2025-10-05                       UPI-SMOKY DOCKY KORMANGA-PAYTM.S1GIB7F@PTY-YESB0MCHUPI-379944355540-PAYMENT FROM PHONE        0000379944355540    -230.00   Debit  HDFC
+316 2025-11-05                      UPI-STRA AMBUR BIRYANI A-PAYTMQR61DPV3@PTYS-YESB0PTMUPI-184840568519-PAYMENT FROM PHONE        0000184840568519    -190.00   Debit  HDFC
+317 2025-12-05           NEFT CR-CITI0100000-PAYPAL PAYMENTS PL INR FBO CUR AC-MOHAMMED ARBAAZ SABER-CITIN52025051262524906  CITIN52025051262524906       1.12  Credit  HDFC
+318 2025-12-05           NEFT CR-CITI0100000-PAYPAL PAYMENTS PL INR FBO CUR AC-MOHAMMED ARBAAZ SABER-CITIN52025051262525140  CITIN52025051262525140       1.13  Credit  HDFC
+319 2025-12-05                                            IMPS-513213385732-MOHAMMED ASIF NADEEM SABER-ICIC-XXXXXXXX8214-HL        0000513213385732  -50000.00   Debit  HDFC
+320 2025-12-05                                           UPI-VODAFONE IDEA LIMITE-VIPREVF@HSBC-HSBC0400002-104694758520-UPI        0000104694758520     -99.00   Debit  HDFC
+321 2025-05-13                                                                                                    HL RETURN        0000549951980768   50000.00  Credit  HDFC
+322 2025-05-13                                         UPI-SUNITASAINIWOMUKESHS-Q215326451@YBL-YESB0YBLUPI-104756688936-UPI        0000104756688936     -35.00   Debit  HDFC
+323 2025-05-13                                          UPI-MR MUSTHAFA V K-PAYTMQR61EFPZ@PTYS-YESB0PTMUPI-104757509180-UPI        0000104757509180     -60.00   Debit  HDFC
+324 2025-05-13                                          UPI-MR MUSTHAFA V K-PAYTMQR61EFPZ@PTYS-YESB0PTMUPI-104757892290-UPI        0000104757892290     -30.00   Debit  HDFC
+325 2025-05-14                                                                                                      CRICKET        0000104812061047    -400.00   Debit  HDFC
+326 2025-05-14                          UPI-RAKSHIT SHIRISH RUDR-8904637770@IBL-KARB0000095-225855962397-PAYMENT FROM PHONE        0000225855962397     300.00  Credit  HDFC
+327 2025-05-14                                                                          IB BILLPAY DR-HDFC97-361010XXXX8278        NB14234808024005  -98501.00   Debit  HDFC
+328 2025-05-16                                                                                              QURBANI ADVANCE        0000104894891640  -60000.00   Debit  HDFC
+329 2025-05-17                           UPI-SPAR HYPERMARKETS-LANDMARKSPAR@YBL-YESB0YBLUPI-104957086163-PAYMENT FOR PINE45        0000104957086163    -806.00   Debit  HDFC
+330 2025-05-17                                                                                                 AMMI TABLETS        0000104957407428   -1496.00   Debit  HDFC
+331 2025-05-17                                                                 CASH DEPOSIT BY - ARBAAZ - BANNERGHATTA ROAD         000000000000000   60000.00  Credit  HDFC
+332 2025-05-18                                      UPI-SANTOSH CHATS-SANTO91108159@BARODAMPAY-BARB0VJINFA-105021738586-UPI        0000105021738586     -90.00   Debit  HDFC
+333 2025-05-18                                      UPI-BOMBAY VADA PAV CENT-PAYTM.S1BKHL4@PTY-YESB0MCHUPI-105026047550-UPI        0000105026047550     -50.00   Debit  HDFC
+334 2025-05-18     UPI-PRASHANTKUMAR RAJEND-BHARATPE9Z0X7B2I8R887958@YESBANKLTD-YESB0YESUPI-105026564123-PAY TO BHARATPE ME        0000105026564123     -60.00   Debit  HDFC
+335 2025-05-18                                        UPI-CAFE ARENA-0798156A0218058.BQR@KOTAK-KKBK0008156-105038239635-UPI        0000105038239635    -415.00   Debit  HDFC
+336 2025-05-19                                                                                                          GAS        0000105075183113    -900.00   Debit  HDFC
+337 2025-05-20                                     UPI-FAMOUS 99 VARIETY DO-PAYTMQR6CS45M@PTYS-YESB0PTMUPI-105142384082-UPI        0000105142384082     -80.00   Debit  HDFC
+338 2025-05-20                                     UPI-TACO BELL GOPALAN IN-PAYTM-3606629@PTYS-YESB0PTMUPI-105142611742-UPI        0000105142611742    -189.00   Debit  HDFC
+339 2025-05-21                                             UPI-SANDWICH GURU-PAYTM.S1AO8MN@PTY-YESB0MCHUPI-105182834279-UPI        0000105182834279    -160.00   Debit  HDFC
+340 2025-05-21                                             UPI-SANDWICH GURU-PAYTM.S1AO8MN@PTY-YESB0MCHUPI-105184147255-UPI        0000105184147255     -65.00   Debit  HDFC
+341 2025-05-23                                          UPI-M K SUBAIR-PAYTMQR4Z7NLVF6PY@PAYTM-YESB0PTMUPI-105257951159-UPI        0000105257951159    -120.00   Debit  HDFC
+342 2025-05-23                                                                                                        X RAY        0000105292231638    -400.00   Debit  HDFC
+343 2025-05-24                                          UPI-UDUPISAGAR-PAYTMQR1W5S4CMLPJ@PAYTM-YESB0PTMUPI-105311632393-UPI        0000105311632393    -130.00   Debit  HDFC
+344 2025-05-24                         UPI-SUSHMITHA B R-PAYTMQR281005050101VK8GOC02JT4N@PAYTM-YESB0PTMUPI-105326486115-UPI        0000105326486115    -120.00   Debit  HDFC
+345 2025-05-24      UPI-AIRTEL DIRECT UPI FI-AIRTELDIRECTUPI836382.RZP@RXAIRTEL-AIRP0000011-105329538596-AIRTELDIRECTUPIFIX        0000105329538596   -2500.00   Debit  HDFC
+346 2025-05-24                                                                                                      COCONUT        0000105330094698    -100.00   Debit  HDFC
+347 2025-05-25                                                                                                      HAIRCUT        0000105367733093    -250.00   Debit  HDFC
+348 2025-05-25                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-105370675875-UPIINTENT        0000105370675875     -50.00   Debit  HDFC
+349 2025-05-25                                                            UPI-ANSHU-ANSUAT@IBL-KKBK0008072-105381912632-UPI        0000105381912632     -40.00   Debit  HDFC
+350 2025-05-25                                              REV-UPI-50100738711936-ARBAAZFB26-1@OKHDFCBANK-105381912632-UPI        0000105381912632      40.00  Credit  HDFC
+351 2025-05-25                                               UPI-KK ADARSH OPUS-Q930535797@YBL-YESB0YBLUPI-105382546976-UPI        0000105382546976   -1476.00   Debit  HDFC
+352 2025-05-25                              UPI-MOHAMMED SAFIULLAH-MOHAMMEDSAFIULLAH1997@OKSBI-KKBK0008065-514588440045-UPI        0000514588440045     700.00  Credit  HDFC
+353 2025-05-27                                                                            ME DC SI 416021XXXXXX3309 NETFLIX        0000514603272891    -649.00   Debit  HDFC
+354 2025-05-27                                                                                                      OUTSIDE        0000105487214015    -168.00   Debit  HDFC
+355 2025-05-27                                                   UPI-SOFIA S-SOFIAS660@OKICICI-KKBK0000432-551373047738-UPI        0000551373047738     200.00  Credit  HDFC
+356 2025-05-27                                                                                                      OUTSIDE        0000105489594438    -104.00   Debit  HDFC
+357 2025-05-28                                          UPI-KHALEEL AKBAR PASHA-9849892471@YBL-KVBL0004845-105513421944-UPI        0000105513421944   -1000.00   Debit  HDFC
+358 2025-05-28                                       UPI-QURRATH UL AIN NUZHA-NUZZIE13@OKICICI-ICIC0001769-551465365215-UPI        0000551465365215    3000.00  Credit  HDFC
+359 2025-05-28                                     UPI-PAVANA KUMARA C-PAYTMQRSGHU5SQY7H@PAYTM-YESB0PTMUPI-105519573362-UPI        0000105519573362    -565.03   Debit  HDFC
+360 2025-05-31                                                                                                   ECITY TOLL        0000515165397820     -35.00   Debit  HDFC
+361 2025-01-06                                                                                          SALARY FOR MAY-2025        0000505306196128   86231.00  Credit  HDFC
+362 2025-02-06                                                                                                        BAKRA        0000105787592034  -16000.00   Debit  HDFC
+363 2025-02-06                                       UPI-QURRATH UL AIN NUZHA-NUZZIE13@OKICICI-ICIC0001769-551919423168-UPI        0000551919423168    5000.00  Credit  HDFC
+364 2025-02-06                                                                                                     VADA PAV        0000105814848982     -20.00   Debit  HDFC
+365 2025-03-06                       UPI-RAKSHIT SHIRISH RUDR-BLUEHEART1309@AXL-UTIB0004071-489077318684-PAYMENT FROM PHONE        0000489077318684   20000.00  Credit  HDFC
+366 2025-03-06                                                                                                    PANI PURI        0000105869061339     -25.00   Debit  HDFC
+367 2025-03-06                                                                                                      BROWNIE        0000105869760302    -103.00   Debit  HDFC
+368 2025-04-06                                                                                                         AUTO        0000105900392851    -270.00   Debit  HDFC
+369 2025-04-06                          UPI-R CHENNA KESAVA REDD-9113501627@YBL-KARB0000964-830182675172-PAYMENT FROM PHONE        0000830182675172     270.00  Credit  HDFC
+370 2025-04-06                                                                      ATW-416021XXXXXX3309-S1AWBL29-BANGALORE        0000000000008871   -5000.00   Debit  HDFC
+371 2025-04-06                                       UPI-GANGALAPUDI HAREESH-PAYTM.S1B0K6A@PTY-YESB0MCHUPI-105927611517-UPI        0000105927611517     -20.00   Debit  HDFC
+372 2025-04-06                                                                                                     VADA PAV        0000105928281429     -20.00   Debit  HDFC
+373 2025-05-06                                                                                           JIO20BR000CB57BJY0        0000105943149141    -199.00   Debit  HDFC
+374 2025-05-06                                         UPI-THAVISHALA VIKRAMA S-Q348564355@YBL-YESB0YBLUPI-105944542257-UPI        0000105944542257     -40.00   Debit  HDFC
+375 2025-05-06                                                                                                       COFFEE        0000515672266050     -60.00   Debit  HDFC
+376 2025-05-06                                                                                                    GROCERIES        0000105968765416     -20.00   Debit  HDFC
+377 2025-05-06                           UPI-NAGANATH-BHARATPE.90066763079@FBPE-FDRL0001382-105972959363-PAY TO BHARATPE ME        0000105972959363   -1000.00   Debit  HDFC
+378 2025-05-06                                   UPI-MEHFIL RESTAURANT4-PAYTM.D14184553183@PTY-YESB0MCHUPI-105973286831-UPI        0000105973286831    -440.00   Debit  HDFC
+379 2025-05-06                                   UPI-MEHFIL RESTAURANT4-PAYTM.D14184553183@PTY-YESB0MCHUPI-105973420036-UPI        0000105973420036     -75.00   Debit  HDFC
+380 2025-06-06                                                                                                    GROCERIES        0000106018518510     -34.00   Debit  HDFC
+381 2025-08-06                                                                                           GENERATING DYNAMIC        0000106148397077    -500.00   Debit  HDFC
+382 2025-09-06                                                UPI-SUBHAN BAKERY-Q892807407@YBL-YESB0YBLUPI-106186409117-UPI        0000106186409117    -260.00   Debit  HDFC
+383 2025-09-06                                                UPI-SUBHAN BAKERY-Q892807407@YBL-YESB0YBLUPI-106186559788-UPI        0000106186559788    -140.00   Debit  HDFC
+384 2025-09-06                                                 UPI-SUBHAN BAKERY-Q13004202@YBL-YESB0YBLUPI-106186790969-UPI        0000106186790969   -1550.00   Debit  HDFC
+385 2025-09-06                                                                                                         TAPE        0000106192563204     -35.00   Debit  HDFC
+386 2025-09-06                                                                                                    GROCERIES        0000106197577148     -80.00   Debit  HDFC
+387 2025-09-06                                                                                                    GROCERIES        0000106197957663     -40.00   Debit  HDFC
+388 2025-10-06                                                                                                   VEGETABLES        0000106228296948     -50.00   Debit  HDFC
+389 2025-12-06                                                                                                         GOLD        0000106340301336  -10000.00   Debit  HDFC
+390 2025-12-06                                                                                                    GROCERIES        0000106363511123    -199.00   Debit  HDFC
+391 2025-06-14                                     UPI-TACO BELL GOPALAN IN-PAYTM-3606629@PTYS-YESB0PTMUPI-106455332657-UPI        0000106455332657    -733.00   Debit  HDFC
+392 2025-06-14                                     UPI-TACO BELL GOPALAN IN-PAYTM-3606629@PTYS-YESB0PTMUPI-106456445874-UPI        0000106456445874    -162.00   Debit  HDFC
+393 2025-06-14                                                                                                    PAV BHAJI        0000106482836666     -90.00   Debit  HDFC
+394 2025-06-15                                                                                                    GROCERIES        0000106499365469     -60.00   Debit  HDFC
+395 2025-06-15                       UPI-RAKSHIT SHIRISH RUDR-BLUEHEART1309@AXL-UTIB0004071-349473205102-PAYMENT FROM PHONE        0000349473205102     366.00  Credit  HDFC
+396 2025-06-15                                                                                                      CHARITY        0000106531617838   -2000.00   Debit  HDFC
+397 2025-06-15                                                                          IB BILLPAY DR-HDFC97-361010XXXX8278        NBNERI4TNQGARSSU  -14399.00   Debit  HDFC
+398 2025-06-17                                                                                                   4007233004        0000106592314951   -3538.82   Debit  HDFC
+399 2025-06-17                                                          CASH DEPOSIT-416021XXXXXX3309-WHITEFIELD  ITPL ROAD        0000000000001117   10500.00  Credit  HDFC
+400 2025-06-17                                                                                           CHARITY AND BAKRID        0000106643374455   -1650.00   Debit  HDFC
+401 2025-06-20                                       UPI-BG RD GCIM CAFE 5-PAYTM-70217819@PTYS-YESB0PTMUPI-106796375893-UPI        0000106796375893    -750.00   Debit  HDFC
+402 2025-06-22                                                                                                       PETROL        0000106890800639    -500.00   Debit  HDFC
+403 2025-06-23                          UPI-AYESHA THAHNIYATH SA-9945178600@YBL-HDFC0000365-597888203209-PAYMENT FROM PHONE        0000597888203209    5000.00  Credit  HDFC
+404 2025-06-23                          UPI-AYESHA THAHNIYATH SA-9945178600@YBL-HDFC0000365-727903710499-PAYMENT FROM PHONE        0000727903710499    6000.00  Credit  HDFC
+405 2025-06-23                                                                                           JIO20BR000C7QHUQZ2        0000106911238497    -349.00   Debit  HDFC
+406 2025-06-24                                                                                                      VEGGIES        0000106963390905     -30.00   Debit  HDFC
+407 2025-06-24                                            UPI-RESHMA BANU-SYEDR5459@OKHDFCBANK-CNRB0000033-106970812136-UPI        0000106970812136    -288.00   Debit  HDFC
+408 2025-06-24                                   UPI-RAJESH M M-MMRAJESH985@YBL-CNRB0000000-166765288069-PAYMENT FROM PHONE        0000166765288069     280.00  Credit  HDFC
+409 2025-06-24                                    UPI-DISTRICT-DISTRICTDINING.PAYU@ICICI-ICIC0DC0099-107001282039-UPIINTENT        0000107001282039    -350.00   Debit  HDFC
+410 2025-06-25                                                                                                      CHICKEN        0000107014212871    -240.00   Debit  HDFC
+411 2025-06-25                               UPI-BMTC BUS KA01F9125-KA01F9125@CNRB-CNRB0000033-107018703289-PAY TO MERCHANT        0000107018703289     -40.00   Debit  HDFC
+412 2025-06-25                                         UPI-SHASHI KIRAN-SHASHI.YOURS-1@OKICICI-ICIC0000252-517682033660-UPI        0000517682033660   11378.00  Credit  HDFC
+413 2025-06-26                                                                                                       SHAADI        0000107076875023   -1000.00   Debit  HDFC
+414 2025-06-26                                                                                                          CAB        0000107082333483    -134.00   Debit  HDFC
+415 2025-06-26                                                                                                       PETROL        0000107102310920    -500.21   Debit  HDFC
+416 2025-06-26                                                                                                         FOOD        0000107102515190    -100.00   Debit  HDFC
+417 2025-06-26                                                                                                       BURGER        0000107105423790   -1418.00   Debit  HDFC
+418 2025-06-27                                                                            ME DC SI 416021XXXXXX3309 NETFLIX        0000517702509955    -649.00   Debit  HDFC
+419 2025-06-27                                                                              POS 416021XXXXXX3309 RETAIL  CC        0000517810015109    -139.00   Debit  HDFC
+420 2025-06-28                          UPI-MOHAMMED ZAINUL HUSS-8147039975@AXL-HDFC0000768-768231833358-PAYMENT FROM PHONE        0000768231833358     260.00  Credit  HDFC
+421 2025-06-28                                                                              POS 416021XXXXXX3309 RETAIL  CC        0000517910000453    -259.00   Debit  HDFC
+422 2025-06-28                                 UPI-BIGGIES BURGER  MIRA-PAYTM.D11985849053@PTY-YESB0MCHUPI-107194857247-UPI        0000107194857247    -341.00   Debit  HDFC
+423 2025-06-29                                                                                                    PANI PURI        0000107243323034     -60.00   Debit  HDFC
+424 2025-06-29                                                                                                      VEGGIES        0000107251253765    -250.00   Debit  HDFC
+425 2025-06-30                                                                        POS 416021XXXXXX3309 HOME AFFAIRS ONL        0000518104837393   -1426.01   Debit  HDFC
+426 2025-06-30                       UPI-RAKSHIT SHIRISH RUDR-BLUEHEART1309@AXL-UTIB0004071-669307887335-PAYMENT FROM PHONE        0000669307887335   25000.00  Credit  HDFC
+427 2025-06-30                                             IMPS-518111357923-MOHAMMED ADIL AHMED-SBIN-XXXXXXX9801-REPAYMENT        0000518111357923   -8194.00   Debit  HDFC
+428 2025-06-30                                                                                                       SNACKS        0000107298618210    -120.00   Debit  HDFC
+429 2025-01-07                                                                               INTEREST PAID TILL 30-JUN-2025         000000000000000    1094.00  Credit  HDFC
+430 2025-01-07                                                                                          SALARY FOR JUN-2025        0000506307222231   87631.00  Credit  HDFC
+431 2025-01-07                                                                                               CHICKEN COUNTY        0000107377711728   -1640.00   Debit  HDFC
+432 2025-01-07                                                                                                        METRO        0000107377942369     -50.00   Debit  HDFC
+433 2025-05-07                                                                                                         AUTO        0000107572676204    -250.00   Debit  HDFC
+434 2025-05-07                                                                                                     PRINTOUT        0000107578141683     -10.00   Debit  HDFC
+435 2025-05-07                                                                                                    GROCERIES        0000107585007853     -20.00   Debit  HDFC
+436 2025-06-07                                       UPI-ATTIBELE ELECTRONIC -EC1-EC-L05@ICICI-ICIC0DC0099-555318631939-UPI        0000555318631939     -40.00   Debit  HDFC
+437 2025-06-07                                                                                                    TACO BELL        0000107655881724    -595.00   Debit  HDFC
+438 2025-06-07                                                                                                    MEDICINES        0000107661492856    -195.00   Debit  HDFC
+439 2025-09-07                                UPI-ZOMATO LIMITED-ZOMATO-ORDER@PTYBL-YESB0PTMUPI-172358843957-ZOMATO PAYMENT        0000172358843957      -1.00   Debit  HDFC
+440 2025-10-07                                                                                                      CHICKEN        0000107848954279    -520.00   Debit  HDFC
+441 2025-10-07                                                                                                        GANNA        0000107888246939     -90.00   Debit  HDFC
+442 2025-12-07                                                                                                       SNACKS        0000107996575737     -80.00   Debit  HDFC
+443 2025-07-13                                                                                                        MOVIE        0000108032862646    -800.00   Debit  HDFC
+444 2025-07-13                                                                                                       BURGER        0000108041195546   -2237.00   Debit  HDFC
+445 2025-07-13                                                                                                         GOLD        0000108049413114  -10000.00   Debit  HDFC
+446 2025-07-13                       UPI-RAKSHIT SHIRISH RUDR-BLUEHEART1309@AXL-UTIB0004071-833016735104-PAYMENT FROM PHONE        0000833016735104    2280.00  Credit  HDFC
+447 2025-07-14                               UPI-CREDIT-CCPAY.95738963173004@ICICI-ICIC0DC0099-395453468961-CREDIT CARD PAY        0000395453468961   -3280.00   Debit  HDFC
+448 2025-07-14                                                                          IB BILLPAY DR-HDFC97-361010XXXX8278        MB14222353645T21  -25308.00   Debit  HDFC
+449 2025-07-15                                                                                                       SNACKS        0000108156017763     -75.00   Debit  HDFC
+450 2025-07-15                                                                                                  DIO SERVICE        0000108160415725   -2295.00   Debit  HDFC
+451 2025-07-17                                                                                                       SNACKS        0000108258071205     -10.00   Debit  HDFC
+452 2025-07-17                                        UPI-ANIL KUMAR N-PAYTMQROAVGVBBM6Z@PAYTM-YESB0PTMUPI-108265324064-UPI        0000108265324064     -20.00   Debit  HDFC
+453 2025-07-18                                                                                                    BREAKFAST        0000108285525947    -585.00   Debit  HDFC
+454 2025-07-18                                                                                                    BREAKFAST        0000108285690480     -45.00   Debit  HDFC
+455 2025-07-18                                             UPI-TRC JP NAGAR-PAYTMQR5D2ZXX@PTYS-YESB0PTMUPI-108286060486-UPI        0000108286060486     -40.00   Debit  HDFC
+456 2025-07-18                                                                                                    BREAKFAST        0000108286474653    -110.00   Debit  HDFC
+457 2025-07-18                                                                                           INDIANRAILWAYCATER        0000108320899565    -791.80   Debit  HDFC
+458 2025-07-18                                                                                           INDIANRAILWAYCATER        0000519919076422   -1624.50   Debit  HDFC
+459 2025-07-19                                                                                           CHAAN BHAIYA PETRO        0000108360199441    -500.00   Debit  HDFC
+460 2025-07-20                                                                                                       SANCKS        0000108420720303     -20.00   Debit  HDFC
+461 2025-07-20                                                                                                         EGGS        0000108420905920     -80.00   Debit  HDFC
+462 2025-07-21                                                                                           JIO20BR000CI8C49C2        0000108461587438    -349.00   Debit  HDFC
+463 2025-07-21                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-108477384135-UPIINTENT        0000108477384135     -30.00   Debit  HDFC
+464 2025-07-21                                                                                                       SNACKS        0000108479796172     -80.00   Debit  HDFC
+465 2025-07-21                                                                                                       SAMOSA        0000108485312055     -30.00   Debit  HDFC
+466 2025-07-21           UPI-SEPHOOL UBAD SHAIKH-BHARATPE09912633730@YESBANKLTD-YESB0YESUPI-108495167786-PAY TO BHARATPE ME        0000108495167786     -20.00   Debit  HDFC
+467 2025-07-22                                                                                                        LUNCH        0000108525011024    -630.00   Debit  HDFC
+468 2025-07-22                                                                                                       SWEETS        0000108525271789    -500.00   Debit  HDFC
+469 2025-07-22                                       UPI-TRIVENI PETROMART-PAYTM-68344038@PTYS-YESB0PTMUPI-108550462964-UPI        0000108550462964    -220.00   Debit  HDFC
+470 2025-07-23                                                                                                      OUTSIDE        0000108579293037   -1150.00   Debit  HDFC
+471 2025-07-23                                                                                                     SHAWARMA        0000108579426208    -240.00   Debit  HDFC
+472 2025-07-23                                    UPI-MEHFIL RESTAURANT AN-PAYTM-74011146@PTYS-YESB0PTMUPI-108579623127-UPI        0000108579623127    -120.00   Debit  HDFC
+473 2025-07-23                                                  UPI-MEHFIL-PAYTM-74896912@PTYS-YESB0PTMUPI-108586067681-UPI        0000108586067681    -240.00   Debit  HDFC
+474 2025-07-23                                               UPI-IRCTC UTS-PAYTM-8796946@PTYBL-YESB0PTMUPI-108588815363-UPI        0000108588815363     -10.00   Debit  HDFC
+475 2025-07-23                                                                                                        WATER        0000108596969647     -20.00   Debit  HDFC
+476 2025-07-24                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-108609632606-UPIINTENT        0000108609632606     -60.00   Debit  HDFC
+477 2025-07-24                                                                                                      HAIRCUT        0000108616036380    -200.00   Debit  HDFC
+478 2025-07-25                                                                                                ABBU FLIPKART        0000108672782820   -1126.00   Debit  HDFC
+479 2025-07-25                                   UPI-LIC OF INDIA DEPOSIT-PAYTM-64842669@PTYBL-YESB0PTMUPI-108706185840-UPI        0000108706185840  -50000.00   Debit  HDFC
+480 2025-07-26                                                                                                        LUNCH        0000108736361464    -155.00   Debit  HDFC
+481 2025-07-26                                       UPI-DIPARGHYA  BARMAN-DIPARGHYABARMAN@YBL-SBIN0000044-108736531137-UPI        0000108736531137     -20.00   Debit  HDFC
+482 2025-07-26                             UPI-ABHISHEK PROPBUILD P-63280095591.PAYSWIFF@INDUS-INDB0MERCHA-108761540576-UPI        0000108761540576     -60.00   Debit  HDFC
+483 2025-07-27                                                                            ME DC SI 416021XXXXXX3309 NETFLIX        0000520702456998    -649.00   Debit  HDFC
+484 2025-07-27                                                                                                       PETROL        0000108812827030    -530.00   Debit  HDFC
+485 2025-07-28                                                    .DC INTL POS TXN MARKUP+ST 300625 300625-MIR2620042422367        MIR2620042422367     -58.89   Debit  HDFC
+486 2025-07-30                                                                                                   MOOOBIEEEE        0000108969977204    -536.00   Debit  HDFC
+487 2025-01-08                                                                                          SALARY FOR JUL-2025        0000507319001244   86581.00  Credit  HDFC
+488 2025-01-08                       UPI-RAKSHIT SHIRISH RUDR-BLUEHEART1309@AXL-UTIB0004071-811534862968-PAYMENT FROM PHONE        0000811534862968   10500.00  Credit  HDFC
+489 2025-02-08                                                                                                       SNACKS        0000109081821437    -330.00   Debit  HDFC
+490 2025-02-08                                     UPI-AMAZON INDIA-AMAZON@RAPL-RATN000RAPL-109107732812-YOU ARE PAYING FOR        0000109107732812     -99.00   Debit  HDFC
+491 2025-02-08                                                                                                    GROCERIES        0000109113169209     -45.00   Debit  HDFC
+492 2025-02-08                                                                                                      OUTSIDE        0000109140138148    -504.00   Debit  HDFC
+493 2025-03-08                                                                                                    GROCERIES        0000109156342913     -20.00   Debit  HDFC
+494 2025-03-08                                                                                                      VEGGIES        0000109169857623     -20.00   Debit  HDFC
+495 2025-03-08                                                                                                       SNACKS        0000109183738305     -40.00   Debit  HDFC
+496 2025-03-08                                                                                                   CAR PETROL        0000109190225266   -2200.00   Debit  HDFC
+497 2025-03-08                                                                                                      OUTSIDE        0000109198391342    -548.00   Debit  HDFC
+498 2025-03-08                                                                                                        CANDY        0000109200053892    -125.00   Debit  HDFC
+499 2025-03-08         UPI-LULUINTERNATIONALSHO-BHARATPE907720034339@YESBANKLTD-YESB0YESUPI-109200601058-PAY TO LULUINTERNA        0000109200601058     -80.00   Debit  HDFC
+500 2025-04-08                                              UPI-TAMANNA KHAN-PISHO5886@OKICICI-DBSS0IN0811-521669245756-UPI        0000521669245756     125.00  Credit  HDFC
+501 2025-07-08                                                                                                       SNACKS        0000109426527360    -220.00   Debit  HDFC
+502 2025-08-08                                                                                                       DINNER        0000109429394778    -600.00   Debit  HDFC
+503 2025-08-08                                                                                                       SNACKS        0000109444567224    -210.00   Debit  HDFC
+504 2025-08-08                                                                                                         FOOD        0000109444719036     -60.00   Debit  HDFC
+505 2025-08-08                                                                                                      PARKING        0000109447214020     -40.00   Debit  HDFC
+506 2025-08-08                                                                                                   HOME STUFF        0000109452163929    -307.00   Debit  HDFC
+507 2025-08-08                                                                                                   STATIONARY        0000109452676915     -47.00   Debit  HDFC
+508 2025-08-08                                                                                                    GROCERIES        0000109460443841     -50.00   Debit  HDFC
+509 2025-08-08                                                                                                     PUNCTURE        0000109462775768     -20.00   Debit  HDFC
+510 2025-08-08                                                                                                     MEDICINE        0000109480569107    -180.00   Debit  HDFC
+511 2025-09-08                                                                                                     MEDICALS        0000109505767889    -130.00   Debit  HDFC
+512 2025-09-08                                                                                                  SUPERMARKET        0000109508723555    -500.00   Debit  HDFC
+513 2025-09-08                                                    UPI-GONIYAPPA-Q950389436@YBL-YESB0YBLUPI-109538886990-UPI        0000109538886990     -20.00   Debit  HDFC
+514 2025-09-08                                                                                                         FUEL        0000109543081749   -2000.00   Debit  HDFC
+515 2025-10-08                            UPI-MRS UMERA  KHALEEL-9845511780@YBL-CBIN0281200-140279523656-PAYMENT FROM PHONE        0000140279523656     200.00  Credit  HDFC
+516 2025-10-08                                                                                                       DINNER        0000109600902963     -70.00   Debit  HDFC
+517 2025-10-08                                                                                                       DINNER        0000109601511410    -520.00   Debit  HDFC
+518 2025-11-08                                                                                           GIFT FOR FARHEEN D        0000109620855754    -900.00   Debit  HDFC
+519 2025-12-08                                                                                                       SNACKS        0000109696756062    -156.00   Debit  HDFC
+520 2025-08-13                                                                                                         GOLD        0000109755582271  -10000.00   Debit  HDFC
+521 2025-08-13                                                                                           MALABARGOLDANDDIAM        0000109755680922  -10000.00   Debit  HDFC
+522 2025-08-13                                                                                                      VEGGIES        0000109762130915     -15.00   Debit  HDFC
+523 2025-08-13                                                                                                    GROCERIES        0000109762548087     -75.00   Debit  HDFC
+524 2025-08-13                                                                                               MANDATEEXECUTE        0000562620832255     -29.00   Debit  HDFC
+525 2025-08-13                                            IMPS-522522392070-MOHAMMED ASIF NADEEM SABER-ICIC-XXXXXXXX8214-HL        0000522522392070 -200000.00   Debit  HDFC
+526 2025-08-14                                                                                                       FRUITS        0000109819464042     -50.00   Debit  HDFC
+527 2025-08-14                                                                                                       SNACKS        0000109819702699     -30.00   Debit  HDFC
+528 2025-08-14                                                                                                       DINNER        0000109825340879    -844.00   Debit  HDFC
+529 2025-08-14                                                                                                      PARKING        0000559276666401     -20.00   Debit  HDFC
+530 2025-08-15                                                                                                      CLOTHES        0000109856103301   -2797.00   Debit  HDFC
+531 2025-08-15                                                                                                    GROCERIES        0000109860007511    -300.00   Debit  HDFC
+532 2025-08-15                                                                                                       SHEEKH        0000109860900786    -120.00   Debit  HDFC
+533 2025-08-17                                                                                                      VEGGIES        0000109928598982     -20.00   Debit  HDFC
+534 2025-08-17                                                                          IB BILLPAY DR-HDFC97-361010XXXX8278        NBH8Q1WCJQ7X9AIS  -10379.00   Debit  HDFC
+535 2025-08-17                                                                                                         BOOK        0000109960294032    -165.00   Debit  HDFC
+536 2025-08-18                                                                                           JIO20BR000CMEBJAW1        0000109977488960    -349.00   Debit  HDFC
+537 2025-08-18                                                                                                    GROCERIES        0000109978054205    -107.00   Debit  HDFC
+538 2025-08-18                                                                                                    GROCERIES        0000109997673404    -150.00   Debit  HDFC
+539 2025-08-18                                                                                                       SNACKS        0000109998259128     -60.00   Debit  HDFC
+540 2025-08-18                                                                                                      GROCERY        0000109998368400     -86.00   Debit  HDFC
+541 2025-08-19                                                                                                        LUNCH        0000110029712788   -1100.00   Debit  HDFC
+542 2025-08-19                                                                                                       PHOTOS        0000110030276633    -200.00   Debit  HDFC
+543 2025-08-19                       UPI-RAKSHIT SHIRISH RUDR-BLUEHEART1309@AXL-UTIB0004071-794910844149-PAYMENT FROM PHONE        0000794910844149     320.00  Credit  HDFC
+544 2025-08-19                                                                                                 RAKSHIT BOOK        0000110030641037    -320.00   Debit  HDFC
+545 2025-08-20                                                                                                       BAKERY        0000110095687409     -92.00   Debit  HDFC
+546 2025-08-22                                                                                                      MANDATE        0000523412222700      -1.00   Debit  HDFC
+547 2025-08-22                                                                                                      MANDATE        0000523412826797      -1.00   Debit  HDFC
+548 2025-08-22                                                                                           CRUNCHYRREFUNDR8HN        0000747928972345       1.00  Credit  HDFC
+549 2025-08-22                                                                                           DIRECTORATEOFEDCSD        0000110162335878    -500.00   Debit  HDFC
+550 2025-08-22                                                                                                       SNACKS        0000110176494095    -460.00   Debit  HDFC
+551 2025-08-23                                                                                           DIRECTORATEOFEDCSD        0000110203118050   -1300.00   Debit  HDFC
+552 2025-08-23                                                                                                         FUEL        0000110221378260    -120.00   Debit  HDFC
+553 2025-08-24                                                                                                       DINNER        0000110279568757   -1224.00   Debit  HDFC
+554 2025-08-25                                                                                                       SNACKS        0000110297796404     -30.00   Debit  HDFC
+555 2025-08-25                                                                                                       PETROL        0000560329963558    -500.00   Debit  HDFC
+556 2025-08-25                                                                                                       DINNER        0000110331060915   -1900.00   Debit  HDFC
+557 2025-08-27                                                                            ME DC SI 416021XXXXXX3309 NETFLIX        0000523902184787    -649.00   Debit  HDFC
+558 2025-08-27                           UPI-BANGALORE METRO-BANGALOREMETRO.PAYU@MAIRTEL-AIRP0000001-110391268650-UPIINTENT        0000110391268650     -50.00   Debit  HDFC
+559 2025-08-27                                                                                                   BREAK FAST        0000110393096701    -130.00   Debit  HDFC
+560 2025-08-27                                                                                                       SNACKS        0000110409146665    -635.00   Debit  HDFC
+561 2025-08-28                                                                                                       DINNER        0000524006355808    -219.00   Debit  HDFC
+562 2025-08-28                                                                                                       DINNER        0000110467275796    -100.00   Debit  HDFC
+563 2025-08-29                                                                                                     PAINTING        0000110494297218   -1512.00   Debit  HDFC
+564 2025-08-29                                                                                                        LUNCH        0000110500685499   -1350.00   Debit  HDFC
+565 2025-08-29                                                                         ACH C- RELIANCE INDUSTRIES-253673429        0000002789480074      55.00  Credit  HDFC
+566 2025-08-29                                                                                K4SXI5EPBN625PWQCU/PAYUAMAZON        0002524193506204    -887.00   Debit  HDFC
+567 2025-08-30                                                                                                     SANDWICH        0000110524777911     -80.00   Debit  HDFC
+568 2025-08-30                                                                                                      MANDATE        0000524213876281    -475.00   Debit  HDFC
+569 2025-08-30                                                                                                       BANANA        0000110536143753     -50.00   Debit  HDFC
+570 2025-08-30                                                                                                      PARATHA        0000110561253232     -80.00   Debit  HDFC
+571 2025-08-30                                                                                                       DINNER        0000110561499422    -160.00   Debit  HDFC
+572 2025-08-31                                                                                                      VEGGIES        0000560908056581     -25.00   Debit  HDFC
+573 2025-01-09                                                                                          SALARY FOR AUG-2025        0000509016167302   87281.00  Credit  HDFC
+574 2025-01-09                                                                                                       SNACKS        0000524473543840     -90.00   Debit  HDFC
+575 2025-03-09                        UPI-MAHAMMADGOUS HUKKERI-8971553991@PTYES-HDFC0008735-388822252088-SENT USING PAYTM U        0000388822252088      50.00  Credit  HDFC
+576 2025-03-09                                         UPI-LALIT SISODIYA-9770672443@OKBIZAXIS-UTIB0000553-110736342636-UPI        0000110736342636     -30.00   Debit  HDFC
+577 2025-05-09                                                                                                        LUNCH        0000110821032103   -1991.00   Debit  HDFC
+578 2025-05-09                                                                                           GENERATING DYNAMIC        0000110832703212    -480.00   Debit  HDFC
+579 2025-05-09                                                                                                      PARKING        0000110835888114    -150.00   Debit  HDFC
+580 2025-06-09                                                                                                       TAILOR        0000110857895575     -34.00   Debit  HDFC
+581 2025-06-09                                                                                                COCONUT WATER        0000110860201239     -70.00   Debit  HDFC
+582 2025-07-09                                                                                                       MARKER        0000110907197583     -10.00   Debit  HDFC
+583 2025-07-09                                                                                                       SNACKS        0000110919254972     -85.00   Debit  HDFC
+584 2025-07-09                                            UPI-KALU RAM-PAYTMQRYSJ8P3P2K4@PAYTM-YESB0PTMUPI-110919381789-UPI        0000110919381789     -50.00   Debit  HDFC
+585 2025-07-09                                                UPI-SHASHIKALA  S-9742173578@YBL-SBIN0011352-525043704431-UPI        0000525043704431     -20.00   Debit  HDFC
+586 2025-10-09                                                                                           AIRTELBROADBANDBIL        0000111054569809    -533.66   Debit  HDFC
+587 2025-11-09                                                                                                    MCDONALDS        0000111089967281    -100.99   Debit  HDFC
+588 2025-11-09                                                                                                      HAIRCUT        0000111106279780    -100.00   Debit  HDFC
+589 2025-11-09                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-111117081018-UPIINTENT        0000111117081018     -60.00   Debit  HDFC
+590 2025-11-09                                                                                                     DELIVERY        0000111131113242    -153.00   Debit  HDFC
+591 2025-11-09                                                                                                      PARKING        0000111135588750     -30.00   Debit  HDFC
+592 2025-11-09                                                                                                       PETROL        0000111135733190    -602.00   Debit  HDFC
+593 2025-12-09                                                                                           TACOBELLINDIABHPLP        0000111151694760    -609.00   Debit  HDFC
+594 2025-12-09                                                                                                    GROCERIES        0000111153849978    -376.00   Debit  HDFC
+595 2025-12-09                                                                                                       SHEEKH        0000111180624298    -480.00   Debit  HDFC
+596 2025-09-13                                                                                               MANDATEEXECUTE        0000191068332565     -29.00   Debit  HDFC
+597 2025-09-13                                                                                           MEDICINE FOR SHAGU        0000111226993105     -50.00   Debit  HDFC
+598 2025-09-13                                                                                                   CAR PETROL        0000111229149744   -2000.00   Debit  HDFC
+599 2025-09-14                                                                                              VEGGIES FOR AAN        0000525707558955     -50.00   Debit  HDFC
+600 2025-09-14                                                                                                       SNACKS        0000111243263054     -20.00   Debit  HDFC
+601 2025-09-14                                                                                                       SNACKS        0000111243971122    -284.00   Debit  HDFC
+602 2025-09-15                                                                                                       SHIRTS        0000562450826738   -2000.00   Debit  HDFC
+603 2025-09-15                                                                                50915703897224571905/PAYTMJIO        0002525895066381    -239.00   Debit  HDFC
+604 2025-09-16                                                                                                          AIR        0000525924576567     -10.00   Debit  HDFC
+605 2025-09-16                                                                                           PUNCTURE FOR SAYED        0000525961881937    -160.00   Debit  HDFC
+606 2025-09-16                      UPI-SAYED ULFATH HUSSAIN-SAYED.BELLARY1@AXL-HDFC0004895-772010526619-PAYMENT FROM PHONE        0000772010526619     160.00  Credit  HDFC
+607 2025-09-16                                                                                                        SOCKS        0000562507811620    -150.00   Debit  HDFC
+608 2025-09-17                              NEFT CR-ICIC0099999-SENCO GOLD LTD-MOHAMMED ARBAAZ SABER-ICICN22025091713479944  ICICN22025091713479944      20.00  Credit  HDFC
+609 2025-09-19                                                                                                    MEDICINES        0000111455365431    -490.00   Debit  HDFC
+610 2025-09-19                                                                                                       SNACKS        0000111460405225     -54.00   Debit  HDFC
+611 2025-09-20                                                                          IB BILLPAY DR-HDFC97-361010XXXX8278        1758371912830732   -9317.00   Debit  HDFC
+612 2025-09-20                                                                                                          BUN        0000111520306247    -160.00   Debit  HDFC
+613 2025-09-20                                                                                                        KHOVA        0000111520723262     -80.00   Debit  HDFC
+614 2025-09-21                                                                                                          PAV        0000111543887814    -120.00   Debit  HDFC
+615 2025-09-21                                                                                                    GROCERIES        0000111544561724    -305.00   Debit  HDFC
+616 2025-09-21                                                                                                CAKE FOR MAMI        0000111576804185    -350.00   Debit  HDFC
+617 2025-09-21                                                                                                         BUNS        0000111577024987     -60.00   Debit  HDFC
+618 2025-09-21                                                                                                          PAV        0000111577291032    -120.00   Debit  HDFC
+619 2025-09-26                                                                                               Q3 TEAM OUTING        0000526976402846    6150.00  Credit  HDFC
+620 2025-09-26                                                                                                       PHYSIO        0000111791263093   -2500.00   Debit  HDFC
+621 2025-09-27                                                                            ME DC SI 416021XXXXXX3309 NETFLIX        0000527003222173    -649.00   Debit  HDFC
+622 2025-09-27                                                                                            ZOMATOONLINEORDER        0000028386047775    -563.38   Debit  HDFC
+623 2025-09-28                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-111863917990-UPIINTENT        0000111863917990     -60.00   Debit  HDFC
+624 2025-09-28                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-111869795425-UPIINTENT        0000111869795425     -50.00   Debit  HDFC
+625 2025-09-28                       UPI-RAKSHIT SHIRISH RUDR-BLUEHEART1309@AXL-UTIB0004071-597929863633-PAYMENT FROM PHONE        0000597929863633     550.00  Credit  HDFC
+626 2025-09-29                                                                                                992 GROCERIES        0000111948647094    -505.00   Debit  HDFC
+627 2025-09-29                                                                                                        ZEPTO        0000111948740132     505.00  Credit  HDFC
+628 2025-09-30                                                                                                    BREAKFAST        0000111954327310    -435.00   Debit  HDFC
+629 2025-09-30                                     UPI-TGIF OPULENCE PRIVAT-PAYTMQR604PIU@PTYS-YESB0PTMUPI-111955428499-UPI        0000111955428499    -490.00   Debit  HDFC
+630 2025-09-30                                     UPI-TGIF OPULENCE PRIVAT-PAYTMQR604PIU@PTYS-YESB0PTMUPI-111955454505-UPI        0000111955454505     -40.00   Debit  HDFC
+631 2025-09-30                                                                                           JIO20BR000CDN8TC93        0000111967026820     -39.00   Debit  HDFC
+632 2025-01-10                                                                               INTEREST PAID TILL 30-SEP-2025         000000000000000    1081.00  Credit  HDFC
+633 2025-01-10                                                                                          SALARY FOR SEP-2025        0000509307345747   85531.00  Credit  HDFC
+634 2025-01-10                                                                                                       PETROL        0000112016052661    -500.00   Debit  HDFC
+635 2025-02-10                                                                                                       SNACKS        0000112071338913    -161.00   Debit  HDFC
+636 2025-02-10                                                                                                        DONUT        0000112071525782    -168.00   Debit  HDFC
+637 2025-02-10                                                                                               AIRPORT ARKING        0000112073114163    -150.00   Debit  HDFC
+638 2025-02-10                                                                                                      PARKING        0000112096944254     150.00  Credit  HDFC
+639 2025-03-10                                                                                                        SHEEK        0000112138708565    -320.00   Debit  HDFC
+640 2025-04-10                                                                                           DINNER WITH RELATI        0000112181990902   -1130.00   Debit  HDFC
+641 2025-04-10                                                                                                        GANNA        0000112182273013    -150.00   Debit  HDFC
+642 2025-04-10                                                                                           PHAAL FOR RELATIVE        0000112184119276     -70.00   Debit  HDFC
+643 2025-06-10                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-112237705425-UPIINTENT        0000112237705425     -60.00   Debit  HDFC
+644 2025-06-10                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-112245014528-UPIINTENT        0000112245014528     -30.00   Debit  HDFC
+645 2025-06-10                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-112248713619-UPIINTENT        0000112248713619     -50.00   Debit  HDFC
+646 2025-06-10                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-112248803120-UPIINTENT        0000112248803120     -50.00   Debit  HDFC
+647 2025-06-10                                UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-527900062635-PAY        0000527900062635      50.00  Credit  HDFC
+648 2025-06-10                                                                                                        CHAAT        0000112266960452    -190.00   Debit  HDFC
+649 2025-06-10                                                                                                       PORTER        0000112274076974    -700.00   Debit  HDFC
+650 2025-07-10                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-112284308965-UPIINTENT        0000112284308965     -50.00   Debit  HDFC
+651 2025-07-10                                           UPI-VODAFONE IDEA LIMITE-VIPREVF@HSBC-HSBC0400002-112284941492-UPI        0000112284941492    -155.00   Debit  HDFC
+652 2025-07-10                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-112285154843-UPIINTENT        0000112285154843     -10.00   Debit  HDFC
+653 2025-07-10                                                                                                       PHYSIO        0000112288922659   -1000.00   Debit  HDFC
+654 2025-07-10                          UPI-BANGALORE METRO RAIL-ENGLISH.BMRC.PAYU@INDUS-INDB0MERCHA-112289042978-UPIINTENT        0000112289042978     -10.00   Debit  HDFC
+655 2025-07-10                                                                                                        METRO        0000112291383342     -50.00   Debit  HDFC
+656 2025-07-10                                                                                                      PARKING        0000112291543795     -20.00   Debit  HDFC
+657 2025-07-10                                                                                                    GROCERIES        0000112292432591    -397.22   Debit  HDFC
+658 2025-08-10                                                              CASH DEPOSIT-416021XXXXXX3309-BANNERGHATTA ROAD        0000000000004742   45000.00  Credit  HDFC
+659 2025-08-10                                                              CASH DEPOSIT-416021XXXXXX3309-BANNERGHATTA ROAD        0000000000004744   27800.00  Credit  HDFC
+660 2025-08-10                                                              CASH DEPOSIT-416021XXXXXX3309-BANNERGHATTA ROAD        0000000000004746    1800.00  Credit  HDFC
+661 2025-10-10                                                                                           JIO20BR000CTRWUBC1        0000112435337447     -19.00   Debit  HDFC
+662 2025-10-10         UPI-MR K MAHADEV SINGH-BHARATPE.9V0O0G0U2J036700@UNITYPE-UNBA000BHPE-112438098067-PAY TO BHARATPE ME        0000112438098067    -100.00   Debit  HDFC
+663 2025-10-10                                                                                                      HAIRCUT        0000112462340441    -150.00   Debit  HDFC
+664 2025-12-10                                                                                                      HAIRCUT        0000112521866457    -100.00   Debit  HDFC
+665 2025-10-13                                                                                                        SAREE        0000112591707714   -1347.50   Debit  HDFC
+666 2025-10-13                                                                                               MANDATEEXECUTE        0000220901422865     -29.00   Debit  HDFC
+667 2025-10-14                                                                                K4SHQ74EA54KPPWRCI/PAYUAMAZON        0000252875193417   -1060.00   Debit  HDFC
+668 2025-10-14                                                                          IB BILLPAY DR-HDFC97-361010XXXX8278        1760434633043511  -25021.00   Debit  HDFC
+669 2025-10-15    UPI-CLEARTRIP-CLEARTRIP248929.RZP-RTEJBJQ3OQYGVAQRV2@RXAIRTEL-AIRP0000011-112676975456-PAYMENTTOCLEARTRIP        0000112676975456   -4580.00   Debit  HDFC
+670 2025-10-15                                                                                                       SNACKS        0000112692722239     -40.00   Debit  HDFC
+671 2025-10-16                                                                                                         TEST        0000112718622208   -1010.00   Debit  HDFC
+672 2025-10-16                                                                                                        TESTS        0000112718683929    -100.00   Debit  HDFC
