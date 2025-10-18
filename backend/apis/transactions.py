@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
 
-from models.transaction import Transaction, TransactionUpsert
+from models.transaction import Transaction, TransactionUpsert, BulkTransactionRequest, BulkTransactionResponse
 import services.transactions_service as transactions_service
 
 router = APIRouter(prefix="/transactions", tags=["Transactions"])
@@ -35,3 +35,23 @@ def update_transaction(transaction_id: int, transaction: Transaction):
     if not success:
         raise HTTPException(status_code=400, detail="Failed to update transaction")
     return {"status": "success"}
+
+@router.post("/bulk", response_model=BulkTransactionResponse)
+def bulk_create_transactions(request: BulkTransactionRequest):
+    """
+    Bulk insert multiple transactions.
+    Returns detailed response with success/failure counts and any errors.
+    """
+    if not request.transactions:
+        raise HTTPException(status_code=400, detail="No transactions provided")
+    
+    if len(request.transactions) > 1000:  # Limit bulk operations
+        raise HTTPException(status_code=400, detail="Maximum 1000 transactions allowed per bulk operation")
+    
+    result = transactions_service.bulk_add_transactions(request.transactions)
+    
+    # If all transactions failed, return 400
+    if result.success_count == 0 and result.failure_count > 0:
+        raise HTTPException(status_code=400, detail=f"All {result.failure_count} transactions failed")
+    
+    return result

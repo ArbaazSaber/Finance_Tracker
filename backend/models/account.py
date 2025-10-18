@@ -1,10 +1,11 @@
 from pydantic import BaseModel, Field
-from typing import Optional
+from typing import Optional, Annotated
+from pydantic import StringConstraints
 
 
 class Account(BaseModel):
     acc_id: int
-    acc_name: str
+    acc_name: Annotated[str, StringConstraints(min_length=1)]
     user_id: int
     bank_id: int
     is_active: bool = True

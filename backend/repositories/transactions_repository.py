@@ -1,8 +1,9 @@
 from db.database import get_connection
 from utils.logger import logger
-from psycopg2.extras import RealDictCursor
+from psycopg2.extras import RealDictCursor, execute_batch
+import psycopg2
 
-from typing import Optional, List, Dict
+from typing import Optional, List, Dict, Tuple
 from models.transaction import Transaction
 
 def get_transaction_by_id(transaction_id: int) -> Optional[Transaction]:
@@ -79,8 +80,8 @@ def insert_transaction(transaction: Transaction) -> Optional[int]:
     Inserts a new transaction and returns the generated transaction_id.
     """
     query = """
-        INSERT INTO transactions(transaction_time, description, old_description, amount, reference_id, type, tag_id, category_id, acc_id, user_id) 
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        INSERT INTO transactions(transaction_time, description, old_description, amount, reference_id, type, tag_id, acc_id, user_id) 
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
         RETURNING transaction_id
     """
     conn = None
@@ -95,9 +96,8 @@ def insert_transaction(transaction: Transaction) -> Optional[int]:
             transaction.old_description,
             transaction.amount,
             transaction.reference_id,
-            transaction.type,
+            transaction.type.value if transaction.type else None,
             transaction.tag_id,
-            transaction.category_id,
             transaction.acc_id,
             transaction.user_id,
         ))
@@ -124,7 +124,6 @@ def update_transaction(transaction_id: int, transaction: Transaction) -> bool:
         SET
             description = %s,
             tag_id = %s,
-            category_id = %s,
             acc_id = %s,
             user_id = %s,
             modified_at = CURRENT_TIMESTAMP
@@ -139,7 +138,6 @@ def update_transaction(transaction_id: int, transaction: Transaction) -> bool:
         cursor.execute(query, (
             transaction.description,
             transaction.tag_id,
-            transaction.category_id,
             transaction.acc_id,
             transaction.user_id,
             transaction_id
@@ -156,3 +154,86 @@ def update_transaction(transaction_id: int, transaction: Transaction) -> bool:
             cursor.close()
         if conn:
             conn.close()
+
+def bulk_insert_transactions(transactions: List[Transaction]) -> Tuple[List[int], List[str]]:
+    """
+    Bulk inserts multiple transactions and returns a tuple of (inserted_ids, errors).
+    Uses execute_batch for efficient bulk operations.
+    """
+    if not transactions:
+        return [], []
+    
+    query = """
+        INSERT INTO transactions(transaction_time, description, old_description, amount, reference_id, type, tag_id, acc_id, user_id) 
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+        RETURNING transaction_id
+    """
+    
+    conn = None
+    cursor = None
+    inserted_ids = []
+    errors = []
+    
+    try:
+        conn = get_connection()
+        cursor = conn.cursor()
+        
+        # Prepare the data for bulk insert
+        transaction_data = []
+        for i, transaction in enumerate(transactions):
+            try:
+                # Validate required fields
+                if not transaction.user_id or not transaction.acc_id:
+                    errors.append(f"Transaction {i}: Missing required user_id or acc_id")
+                    continue
+                    
+                transaction_data.append((
+                    transaction.transaction_time,
+                    transaction.description,
+                    transaction.old_description,
+                    transaction.amount,
+                    transaction.reference_id,
+                    transaction.type.value if transaction.type else None,
+                    transaction.tag_id,
+                    transaction.acc_id,
+                    transaction.user_id,
+                ))
+            except Exception as e:
+                errors.append(f"Transaction {i}: Data validation error - {str(e)}")
+        
+        if not transaction_data:
+            return [], errors
+        
+        # Execute bulk insert using execute_batch for better performance
+        execute_batch(
+            cursor,
+            query,
+            transaction_data,
+            page_size=1000  # Process in batches of 1000
+        )
+        
+        # Get the inserted IDs
+        cursor.execute("SELECT transaction_id FROM transactions ORDER BY transaction_id DESC LIMIT %s", (len(transaction_data),))
+        result_rows = cursor.fetchall()
+        inserted_ids = [row[0] for row in reversed(result_rows)]  # Reverse to get correct order
+        
+        conn.commit()
+        logger.info(f"Successfully bulk inserted {len(inserted_ids)} transactions")
+        
+    except psycopg2.Error as e:
+        logger.error(f"[Repository] Database error in bulk_insert_transactions: {e}")
+        if conn:
+            conn.rollback()
+        errors.append(f"Database error: {str(e)}")
+    except Exception as e:
+        logger.error(f"[Repository] Unexpected error in bulk_insert_transactions: {e}")
+        if conn:
+            conn.rollback()
+        errors.append(f"Unexpected error: {str(e)}")
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+    
+    return inserted_ids, errors
