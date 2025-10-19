@@ -65,7 +65,7 @@ class DataHandling:
             
             # Convert date column
             if "date" in df.columns:
-                df["date"] = pd.to_datetime(df["date"], errors="coerce")
+                df["date"] = pd.to_datetime(df["date"], errors="coerce", dayfirst=True, )
                 df = df.dropna(subset=["date"])
             
             # Handle amount columns
