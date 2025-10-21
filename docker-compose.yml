@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    container_name: finance-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+    restart: always
+    networks:
+      - finance-network
+
+  frontend:
+    build: ./frontend
+    container_name: finance-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always
+    networks:
+      - finance-network
+
+  statement-processor:
+    build: ./statement-processor
+    container_name: finance-processor
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+    volumes:
+      - ./statement-processor/data:/app/data
+    depends_on:
+      - backend
+    restart: "no"  # Manual execution
+    networks:
+      - finance-network
+    profiles:
+      - tools  # Only start with --profile tools
+
+networks:
+  finance-network:
+    driver: bridge
