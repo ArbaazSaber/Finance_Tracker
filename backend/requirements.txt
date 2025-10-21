@@ -1,3 +1,10 @@
+psycopg2-binary==2.9.10
+fastapi==0.116.1
+uvicorn==0.35.0
+python-dotenv==1.1.1
+argon2-cffi==25.1.0
+pydantic==2.11.1
+
 # Testing dependencies
 pytest==7.4.3
 pytest-cov==4.1.0
@@ -6,9 +13,6 @@ pytest-asyncio==0.21.1
 
 # HTTP testing
 httpx==0.25.2
-
-# Mocking
-unittest-mock==1.0.1
 
 # Coverage
 coverage==7.3.2
