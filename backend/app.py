@@ -5,7 +5,11 @@ from apis import banks, categories, category_targets, tags, users, tag_rules, ac
 app = FastAPI(title="Finance Tracker Automation")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Or specify your frontend URL
+    allow_origins=[
+        "https://dashboard.arbaazsaber.com",
+        "http://localhost:3000",
+        "http://127.0.0.1:3000"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

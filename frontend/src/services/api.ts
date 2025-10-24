@@ -15,7 +15,7 @@ const api = axios.create({
 
 // Users API
 export const usersApi = {
-  getAll: () => api.get<User[]>('/users'),
+  getAll: () => api.get<User[]>('/users/'),
   getById: (userId: number) => api.get<User>(`/users/${userId}`),
   create: (user: Omit<User, 'user_id'>) => api.post<number>('/users', user),
   update: (userId: number, user: Partial<User>) => api.put(`/users/${userId}`, user),
@@ -43,7 +43,7 @@ export const transactionsApi = {
 
 // Categories API
 export const categoriesApi = {
-  getAll: () => api.get<Category[]>('/categories'),
+  getAll: () => api.get<Category[]>('/categories/'),
   getById: (categoryId: number) => api.get<Category>(`/categories/${categoryId}`),
   getByUser: (userId: number) => api.get<Category[]>(`/categories/user/${userId}`),
   create: (category: Omit<Category, 'category_id'>) => api.post<number>('/categories', category),
@@ -53,7 +53,7 @@ export const categoriesApi = {
 
 // Banks API
 export const banksApi = {
-  getAll: () => api.get<Bank[]>('/banks'),
+  getAll: () => api.get<Bank[]>('/banks/'),
   getById: (bankId: number) => api.get<Bank>(`/banks/${bankId}`),
   create: (bank: Omit<Bank, 'bank_id'>) => api.post<number>('/banks', bank),
   update: (bankId: number, bank: Partial<Bank>) => api.put(`/banks/${bankId}`, bank),
@@ -62,7 +62,7 @@ export const banksApi = {
 
 // Tags API
 export const tagsApi = {
-  getAll: () => api.get<Tag[]>('/tags'),
+  getAll: () => api.get<Tag[]>('/tags/'),
   getById: (tagId: number) => api.get<Tag>(`/tags/${tagId}`),
   getByUser: (userId: number) => api.get<Tag[]>(`/tags/user/${userId}`),
   create: (tag: Omit<Tag, 'tag_id'>) => api.post<number>('/tags', tag),
