@@ -1,9 +1,9 @@
 from db.database import get_connection
 from utils.logger import logger
-from psycopg2.extras import RealDictCursor, execute_batch
+from psycopg2.extras import RealDictCursor, execute_values
 import psycopg2
 
-from typing import Optional, List, Dict, Tuple
+from typing import Optional, List, Tuple
 from models.transaction import Transaction
 
 def get_transaction_by_id(transaction_id: int) -> Optional[Transaction]:
@@ -158,16 +158,11 @@ def update_transaction(transaction_id: int, transaction: Transaction) -> bool:
 def bulk_insert_transactions(transactions: List[Transaction]) -> Tuple[List[int], List[str]]:
     """
     Bulk inserts multiple transactions and returns a tuple of (inserted_ids, errors).
-    Uses execute_batch for efficient bulk operations.
+    Uses execute_values for efficient bulk operations with ON CONFLICT support.
+    Skips duplicate transactions based on (reference_id, acc_id) unique constraint.
     """
     if not transactions:
         return [], []
-    
-    query = """
-        INSERT INTO transactions(transaction_time, description, old_description, amount, reference_id, type, tag_id, acc_id, user_id) 
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
-        RETURNING transaction_id
-    """
     
     conn = None
     cursor = None
@@ -204,21 +199,25 @@ def bulk_insert_transactions(transactions: List[Transaction]) -> Tuple[List[int]
         if not transaction_data:
             return [], errors
         
-        # Execute bulk insert using execute_batch for better performance
-        execute_batch(
+        # Execute bulk insert using execute_values which properly supports ON CONFLICT
+        query = """
+            INSERT INTO transactions(transaction_time, description, old_description, amount, reference_id, type, tag_id, acc_id, user_id) 
+            VALUES %s
+            ON CONFLICT ON CONSTRAINT unique_reference_per_account DO NOTHING
+        """
+        
+        execute_values(
             cursor,
             query,
             transaction_data,
-            page_size=1000  # Process in batches of 1000
+            page_size=1000
         )
         
-        # Get the inserted IDs
-        cursor.execute("SELECT transaction_id FROM transactions ORDER BY transaction_id DESC LIMIT %s", (len(transaction_data),))
-        result_rows = cursor.fetchall()
-        inserted_ids = [row[0] for row in reversed(result_rows)]  # Reverse to get correct order
-        
         conn.commit()
-        logger.info(f"Successfully bulk inserted {len(inserted_ids)} transactions")
+        logger.info(f"Successfully processed {len(transaction_data)} transactions (duplicates automatically skipped)")
+        
+        # Return empty list for inserted_ids
+        inserted_ids = []
         
     except psycopg2.Error as e:
         logger.error(f"[Repository] Database error in bulk_insert_transactions: {e}")

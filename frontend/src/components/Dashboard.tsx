@@ -33,6 +33,7 @@ const Dashboard: React.FC = () => {
       // Load accounts
       const accountsResponse = await accountsApi.getByUser(currentUserId);
       const userAccounts = accountsResponse.data;
+      console.log('Dashboard - Accounts loaded:', userAccounts);
       setAccounts(userAccounts);
 
       // Load recent transactions
@@ -85,11 +86,17 @@ const Dashboard: React.FC = () => {
       .reduce((sum, transaction) => sum + Math.abs(parseFloat(transaction.amount)), 0);
   };
 
-  const formatCurrency = (amount: number): string => {
-    return new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD',
-    }).format(amount);
+  const formatCurrency = (amount: number, currencyCode: string = 'USD'): string => {
+    const locale = navigator.language || 'en-US';
+    try {
+      return new Intl.NumberFormat(locale, {
+        style: 'currency',
+        currency: currencyCode,
+      }).format(amount);
+    } catch (error) {
+      // Fallback to just amount with currency code
+      return `${currencyCode} ${amount.toFixed(2)}`;
+    }
   };
 
   const formatDate = (dateString: string): string => {
@@ -119,6 +126,11 @@ const Dashboard: React.FC = () => {
     // Extract account number from acc_name if available
     const match = account.acc_name?.match(/(\d{4})/);
     return match ? `****${match[1]}` : '****0000';
+  };
+
+  const getAccountCurrency = (accId: number): string => {
+    const account = accounts.find(acc => acc.acc_id === accId);
+    return account?.currency || 'USD';
   };
 
   if (loading) {
@@ -169,15 +181,22 @@ const Dashboard: React.FC = () => {
             <p className="no-data">No accounts found</p>
           ) : (
             <div className="accounts-list">
-              {accounts.map((account) => (
+              {accounts.map((account) => {
+                console.log('Rendering account:', account);
+                return (
                 <div key={account.acc_id} className="account-card">
                   <h4>{getDisplayName(account)}</h4>
                   <p className="account-number">
-                    {getAccountNumber(account)}
+                    {account.bank_name || 'Bank'}
                   </p>
-                  <p className="account-balance">{account.bank_name}</p>
+                  <p className="account-balance">
+                    {account.balance !== undefined && account.currency 
+                      ? formatCurrency(account.balance, account.currency)
+                      : 'Balance unavailable'
+                    }
+                  </p>
                 </div>
-              ))}
+              )})}
             </div>
           )}
         </div>
@@ -200,7 +219,7 @@ const Dashboard: React.FC = () => {
                     <p className="transaction-date">{formatDate(transaction.transaction_time || transaction.transaction_date || '')}</p>
                   </div>
                   <p className={`transaction-amount ${parseFloat(transaction.amount?.toString() || '0') >= 0 ? 'income' : 'expense'}`}>
-                    {formatCurrency(parseFloat(transaction.amount?.toString() || '0'))}
+                    {formatCurrency(parseFloat(transaction.amount?.toString() || '0'), getAccountCurrency(transaction.acc_id))}
                   </p>
                 </div>
               ))}

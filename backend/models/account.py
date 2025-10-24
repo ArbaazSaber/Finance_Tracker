@@ -9,6 +9,8 @@ class Account(BaseModel):
     user_id: int
     bank_id: int
     is_active: bool = True
+    balance: int
+    currency: str
 
 
 class AccountBase(BaseModel):
@@ -20,9 +22,13 @@ class AccountBase(BaseModel):
     acc_name: str = Field(..., min_length=1)
     bank_name: str = Field(..., min_length=1)
     user_name: str = Field(..., min_length=1)
+    balance: int = Field(default=0)
+    currency: str = Field(min_length=3, max_length=3)
 
 
 class AccountUpdate(BaseModel):
     """Partial model for updating an account. Fields are optional."""
     acc_name: Optional[str] = None
     bank_name: Optional[str] = None
+    balance: Optional[int] = None
+    currency: Optional[str] = None
