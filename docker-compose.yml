@@ -14,11 +14,11 @@ services:
       - finance-network
 
   frontend:
-    build: ./frontend
+    build:
+      context: ./frontend
+      args:
+        - REACT_APP_API_URL=${REACT_APP_API_URL}
     container_name: finance-frontend
-    dns:
-      - 1.1.1.1
-      - 8.8.8.8
     ports:
       - "3000:80"
     depends_on:
