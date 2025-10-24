@@ -1,0 +1,15 @@
+name: Deploy on commit to main
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: self-hosted # Runs on YOUR computer
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run commands
+        run: |
+          docker compose pull
+          docker compose up -d --build
