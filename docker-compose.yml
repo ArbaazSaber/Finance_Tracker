@@ -2,6 +2,9 @@ services:
   backend:
     build: ./backend
     container_name: finance-backend
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
     ports:
       - "8000:8000"
     environment:
@@ -13,6 +16,9 @@ services:
   frontend:
     build: ./frontend
     container_name: finance-frontend
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
     ports:
       - "3000:80"
     depends_on:
@@ -38,5 +44,4 @@ services:
 
 networks:
   finance-network:
-    enable_ipv6: true
     driver: bridge
