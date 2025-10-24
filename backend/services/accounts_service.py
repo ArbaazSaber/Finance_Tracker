@@ -62,7 +62,13 @@ def create_account(account: AccountBase) -> Optional[int]:
         raise ValueError("User Not Found")
     user_id = user["user_id"]
 
-    acc_id = account_repo.create_account(account.acc_name.strip(), user_id, bank_id)
+    acc_id = account_repo.create_account(
+        account.acc_name.strip(), 
+        user_id, 
+        bank_id, 
+        account.balance, 
+        account.currency
+    )
     logger.info(f"Inserted new account: {account.acc_name} with ID: {acc_id}")
     return acc_id
 
@@ -96,7 +102,17 @@ def update_account(acc_id: int, acc_data: AccountUpdate) -> bool:
     else:
         new_bank_id = existing.get('bank_id')
 
-    updated = account_repo.update_account(acc_id=acc_id, acc_name=new_acc_name, bank_id=new_bank_id)
+    # Get balance and currency if provided
+    new_balance = acc_data.balance if acc_data.balance is not None else None
+    new_currency = acc_data.currency if acc_data.currency else None
+    
+    updated = account_repo.update_account(
+        acc_id=acc_id, 
+        acc_name=new_acc_name, 
+        bank_id=new_bank_id,
+        balance=new_balance,
+        currency=new_currency
+    )
     if updated:
         logger.info(f"Updated account {acc_id} to Account Name='{new_acc_name}', BankId={new_bank_id}")
     else:

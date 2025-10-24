@@ -141,15 +141,21 @@ def bulk_add_transactions(transactions: List[Transaction]) -> BulkTransactionRes
     # Combine all errors
     all_errors = pre_validation_errors + db_errors
     
-    success_count = len(inserted_ids)
-    failure_count = len(transactions) - success_count
+    # Since we use ON CONFLICT DO NOTHING with execute_batch, we don't get inserted_ids
+    # We consider all valid transactions as successfully processed if no DB errors occurred
+    if db_errors:
+        success_count = 0
+        failure_count = len(transactions)
+    else:
+        success_count = len(valid_transactions)
+        failure_count = len(pre_validation_errors)
     
-    logger.info(f"Bulk transaction insert completed: {success_count} successful, {failure_count} failed")
+    logger.info(f"Bulk transaction insert completed: {success_count} processed, {failure_count} failed validation")
     
     return BulkTransactionResponse(
         success_count=success_count,
         failure_count=failure_count,
         total_processed=len(transactions),
-        inserted_ids=inserted_ids,
+        inserted_ids=inserted_ids,  # Will be empty list
         errors=all_errors if all_errors else None
     )

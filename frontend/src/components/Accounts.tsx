@@ -15,10 +15,10 @@ const Accounts: React.FC = () => {
 
   const [formData, setFormData] = useState({
     user_id: currentUserId,
+    acc_name: '',
     bank_id: 0,
-    account_number: '',
-    account_type: '',
     balance: 0,
+    currency: 'USD',
   });
 
   useEffect(() => {
@@ -35,10 +35,14 @@ const Accounts: React.FC = () => {
         banksApi.getAll()
       ]);
 
+      console.log('Banks response:', banksRes.data);
+      console.log('Accounts response:', accountsRes.data);
+      
       setAccounts(accountsRes.data);
-      setBanks(banksRes.data);
+      setBanks(Array.isArray(banksRes.data) ? banksRes.data : []);
     } catch (err: any) {
-      setError(err.response?.data?.detail || 'Failed to load data');
+      console.error('Error loading data:', err);
+      setError(err.response?.data?.detail || err.message || 'Failed to load data');
     } finally {
       setLoading(false);
     }
@@ -64,10 +68,10 @@ const Accounts: React.FC = () => {
     setEditingAccount(account);
     setFormData({
       user_id: account.user_id,
+      acc_name: account.acc_name,
       bank_id: account.bank_id,
-      account_number: account.account_number || '',
-      account_type: account.account_type || '',
-      balance: account.balance || 0,
+      balance: account.balance,
+      currency: account.currency || 'USD',
     });
     setShowAddForm(true);
   };
@@ -86,23 +90,43 @@ const Accounts: React.FC = () => {
   const resetForm = () => {
     setFormData({
       user_id: currentUserId,
+      acc_name: '',
       bank_id: 0,
-      account_number: '',
-      account_type: '',
       balance: 0,
+      currency: 'USD',
     });
     setShowAddForm(false);
     setEditingAccount(null);
   };
 
 
-  const getBankName = (bankId: number): string => {
-    const bank = banks.find(b => b.bank_id === bankId);
-    return bank ? bank.name : 'Unknown Bank';
+  const getBankName = (account: Account): string => {
+    // First try to use bank_name from account response (if backend provides it)
+    if (account.bank_name) {
+      return account.bank_name;
+    }
+    // Otherwise lookup from banks array
+    const bank = banks.find(b => b.bank_id === account.bank_id);
+    if (bank) {
+      return bank.name;
+    }
+    // Debug log if we can't find the bank
+    console.log('Bank not found for account:', account, 'banks array:', banks);
+    return 'Unknown Bank';
   };
 
-  const getAccountDisplayName = (account: Account): string => {
-    return account.acc_name || account.account_type || 'Account';
+  const formatCurrency = (amount: number | undefined, currencyCode: string): string => {
+    const numAmount = amount || 0;
+    const locale = navigator.language || 'en-US';
+    try {
+      return new Intl.NumberFormat(locale, {
+        style: 'currency',
+        currency: currencyCode,
+      }).format(numAmount);
+    } catch (error) {
+      // Fallback to just the amount with currency code
+      return `${currencyCode} ${numAmount.toFixed(2)}`;
+    }
   };
 
   if (loading) {
@@ -145,34 +169,66 @@ const Accounts: React.FC = () => {
                 required
               >
                 <option value={0}>Select a bank</option>
-                {banks.map(bank => (
-                  <option key={bank.bank_id} value={bank.bank_id}>
-                    {bank.name}
-                  </option>
-                ))}
+                {banks.length === 0 ? (
+                  <option disabled>No banks available - Please add banks first</option>
+                ) : (
+                  banks.map(bank => (
+                    <option key={bank.bank_id} value={bank.bank_id}>
+                      {bank.name}
+                    </option>
+                  ))
+                )}
               </select>
+              {banks.length === 0 && (
+                <small style={{color: '#e74c3c', marginTop: '5px'}}>No banks found. Please add banks using the backend API first.</small>
+              )}
             </div>
 
             <div className="form-group">
-              <label htmlFor="account_number">Account Number:</label>
+              <label htmlFor="acc_name">Account Name:</label>
               <input
                 type="text"
-                id="account_number"
-                value={formData.account_number}
-                onChange={(e) => setFormData({...formData, account_number: e.target.value})}
+                id="acc_name"
+                maxLength={20}
+                value={formData.acc_name}
+                onChange={(e) => setFormData({...formData, acc_name: e.target.value})}
                 required
+                placeholder="e.g., Main Checking, Savings"
               />
             </div>
 
             <div className="form-group">
-              <label htmlFor="balance">Initial Balance:</label>
+              <label htmlFor="balance">Balance:</label>
               <input
                 type="number"
                 id="balance"
                 step="0.01"
                 value={formData.balance}
-                onChange={(e) => setFormData({...formData, balance: parseFloat(e.target.value)})}
+                onChange={(e) => setFormData({...formData, balance: parseFloat(e.target.value) || 0})}
+                required
               />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="currency">Currency:</label>
+              <select
+                id="currency"
+                value={formData.currency}
+                onChange={(e) => setFormData({...formData, currency: e.target.value})}
+                required
+              >
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="INR">INR - Indian Rupee</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+                <option value="CAD">CAD - Canadian Dollar</option>
+                <option value="CHF">CHF - Swiss Franc</option>
+                <option value="CNY">CNY - Chinese Yuan</option>
+                <option value="SEK">SEK - Swedish Krona</option>
+                <option value="NZD">NZD - New Zealand Dollar</option>
+              </select>
             </div>
 
             <div className="form-buttons">
@@ -195,7 +251,7 @@ const Accounts: React.FC = () => {
             {accounts.map((account) => (
               <div key={account.acc_id} className="account-card">
                 <div className="account-header">
-                  <h3>{getAccountDisplayName(account)}</h3>
+                  <h3>{account.acc_name}</h3>
                   <div className="account-actions">
                     <button 
                       onClick={() => handleEdit(account)}
@@ -213,9 +269,14 @@ const Accounts: React.FC = () => {
                 </div>
                 
                 <div className="account-details">
-                  <p className="bank-name">{account.bank_name || getBankName(account.bank_id)}</p>
+                  <p className="bank-name">{getBankName(account)}</p>
+                  <p className="account-status">
+                    Status: <span className={account.is_active ? 'status-active' : 'status-inactive'}>
+                      {account.is_active ? 'Active' : 'Inactive'}
+                    </span>
+                  </p>
                   <p className="account-balance">
-                    Status: {account.is_active ? 'Active' : 'Inactive'}
+                    {formatCurrency(account.balance, account.currency)}
                   </p>
                 </div>
               </div>

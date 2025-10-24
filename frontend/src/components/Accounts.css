@@ -207,6 +207,22 @@
   font-weight: 500;
 }
 
+.account-status {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.status-active {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.status-inactive {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
 .account-balance {
   color: #27ae60;
   font-size: 24px;
