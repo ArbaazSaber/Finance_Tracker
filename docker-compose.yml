@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   backend:
     build: ./backend
@@ -40,4 +38,5 @@ services:
 
 networks:
   finance-network:
+    enable_ipv6: true
     driver: bridge
