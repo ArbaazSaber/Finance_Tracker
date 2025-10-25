@@ -25,6 +25,9 @@ FROM nginx:1.26.2-alpine
 # Copy built files to nginx
 COPY --from=build /app/build /usr/share/nginx/html
 
+# Copy custom nginx config to enable SPA fallback
+COPY nginx_default.conf /etc/nginx/conf.d/default.conf
+
 # Expose port 80
 EXPOSE 80
 
